@@ -1,3 +1,38 @@
+# 文件导入修复验证（1.1.1）
+
+日期：2026-10-16（Asia/Shanghai）。当前版本 1.1.1，versionCode 3，Room 仍为版本 3；未调整表结构、签名或权限，已有词库与学习记录按原路径保留。
+
+## 本次修复
+
+- 修复常见 JSON 的 `word` 字符串被误当作备份 `word` 对象，导致所有词条报错的问题。支持 `word/translations`、`english/meaning`、包装数组及 `headWord/content.word.content` 嵌套词典 JSON/JSONL。
+- 普通 Tab 文本中的英文引号按原内容保留，不再按 CSV 错误拒绝。CSV 根据内容识别逗号、分号或 Tab，文件后缀不再强制覆盖实际分隔方式；补充 word/definition、word/translation 等表头。
+- 兼容常见词典的 3/6/13 列 TSV、复合词性 n&vt 等；中文义项、词性、音标和首个例句映射到现有字段，短语及其他扩展资料不写入现有 Word 表。
+- 文件选择按钮不再要求预先填写名称，名称留空时使用文件名。元数据查询失败仍尝试读取 content:// 内容。
+- 新增手动 GBK/GB18030 编码选项；默认仍严格按 UTF-8 或 BOM 解码。Excel 工作簿和压缩文件明确提示转换为 CSV/TXT，不自动猜测或乱码导入。
+- 文件读取/权限/解析错误持续显示到重新选择或切换编码，不随 Snackbar 消失。操作仍在后台运行，预览确认后才进行事务写入。
+
+## 实际验证结果
+
+- 修复前新增的 6 项兼容性用例全部失败，确认能够复现问题；修复后新增 9 项兼容性测试及文件选择回调测试均通过。
+- 最终命令：`.\gradlew.bat testDebugUnitTest assembleDebug assembleDebugAndroidTest lintDebug --console=plain`，**BUILD SUCCESSFUL**。
+- **40 项测试全部通过，0 失败、0 错误、0 跳过**。其中 ImportCompatibilityTest 9 项、FileImportTest 2 项；原有词库管理、学习、持久化、迁移及备份测试继续通过。
+- 文件选择测试实际触发 ACTION_OPEN_DOCUMENT，模拟 ActivityResultRegistry 的取消与成功返回，使用 ContentProvider 文件描述符完成读取、自动命名、Activity 重建、预览及最终导入；取消不写入数据。还覆盖元数据读取失败、错误提示保留及 GBK 文件读取。
+- 使用编译后的生产解析器额外读取本地参考目录的 8 份完整六级词库：JSON、两列 TXT、simple/sentence/full JSONL、simple/sentence/full TSV。每份均为 **5651 条有效、0 错误**，合计 45208 条解析检查；未把第三方词库复制到源码或 APK。
+- Lint：0 错误、15 条工具/依赖版本和 kapt 建议。
+- Debug APK 及仪器测试 APK 构建成功；最终 Debug APK 通过 apksigner verify 和 zipalign 检查。包名 com.wordtrail.app，minSdk 26，targetSdk 36，无新增存储或网络权限。
+- Debug APK：`app/build/outputs/apk/debug/app-debug.apk`。
+- SHA-256：`88437a86c9f9bc6ead122955c08cb81b8d014d1e7cdcef8305f8d18718143626`。
+
+## 使用与未实测项
+
+覆盖安装 1.1.1 后，设置 → 词库管理 → 添加词库 → 文件导入 → 选择文件并预览。可留空名称；出现编码错误时选 GBK/GB18030 后重新选择。确认预览有效词条后导入。
+
+没有连接设备；测试运行于 JVM / Robolectric API 35，尚未实际操作真机系统文件选择器、云盘提供者、厂商后台清理或手机重启。尚未取得用户此次失败的原始文件与完整报错，因此不能断言该文件的所有非标准格式都已覆盖。单次 20 MB / 50000 条等限制不变。
+
+以下保留 1.1.0 的历史验证报告，供追踪原功能与迁移验证。
+
+---
+
 # 词库管理验证报告（1.1.0）
 
 日期：2026-10-15（Asia/Shanghai）。项目：`WordTrail`。Kotlin + Jetpack Compose + Room + DataStore，最低 API 26，目标 API 36。沿用原架构、配色及原有学习逻辑，未变更发布签名。

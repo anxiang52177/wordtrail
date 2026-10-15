@@ -23,6 +23,8 @@ class StudyViewModel(application: Application, private val saved: SavedStateHand
     val bookName = saved.getStateFlow("bookName", "")
     val bookDescription = saved.getStateFlow("bookDescription", "")
     val importSource = saved.getStateFlow("importSource", "粘贴导入")
+    val fileEncoding = saved.getStateFlow("fileEncoding", "auto")
+    val fileImportError = MutableStateFlow<String?>(null)
     val days = repo.days.stateIn(viewModelScope, SharingStarted.Eagerly, emptyList())
     val settings = app.settings.flow.stateIn(viewModelScope, SharingStarted.Eagerly, Settings())
     val mode = saved.getStateFlow("mode", StudyMode.NEW.name)
@@ -71,12 +73,18 @@ class StudyViewModel(application: Application, private val saved: SavedStateHand
         saved["bookEditor"] = kind; saved["targetBook"] = target
         saved["bookName"] = ""; saved["bookDescription"] = ""
         importText.value = ""
+        saved["fileEncoding"] = "auto"; fileImportError.value = null
         importPreview.value = null; importResult.value = null
     }
     fun closeBookEditor() { if (!busy.value) { saved["bookEditor"] = ""; importPreview.value = null } }
     fun bookName(value: String) { saved["bookName"] = value }
     fun bookDescription(value: String) { saved["bookDescription"] = value }
     fun targetBook(value: String?) { if (!busy.value) { saved["targetBook"] = value; importPreview.value = null } }
+    fun fileEncoding(value: String) {
+        if (!busy.value && value in setOf("auto", "gb18030")) {
+            saved["fileEncoding"] = value; importPreview.value = null; fileImportError.value = null
+        }
+    }
     fun createBook() = action {
         val id = repo.createBook(bookName.value, bookDescription.value)
         saved["targetBook"] = id; saved["bookEditor"] = "single"
@@ -99,16 +107,40 @@ class StudyViewModel(application: Application, private val saved: SavedStateHand
     }
     fun previewFile(uri: Uri) = action {
         importPreview.value = null
+        fileImportError.value = null
         val target = targetBook.value
-        importPreview.value = withContext(Dispatchers.IO) {
-            val resolver = app.contentResolver
-            val name = runCatching { resolver.query(uri, arrayOf(android.provider.OpenableColumns.DISPLAY_NAME), null, null, null)?.use {
-                if (it.moveToFirst()) it.getString(0) else ""
-            } }.getOrNull().orEmpty()
-            val text = resolver.openInputStream(uri)?.use(WordImport::read) ?: error("无法读取所选文件，请重新选择")
-            repo.previewImport(WordImport.parse(text, if (name.endsWith(".csv", true)) "csv" else "auto"), target)
+        val encoding = fileEncoding.value
+        try {
+            val (preview, fileName) = withContext(Dispatchers.IO) {
+                val resolver = app.contentResolver
+                val name = runCatching { resolver.query(uri, arrayOf(android.provider.OpenableColumns.DISPLAY_NAME), null, null, null)?.use {
+                    val column = it.getColumnIndex(android.provider.OpenableColumns.DISPLAY_NAME)
+                    if (it.moveToFirst() && column >= 0) it.getString(column) else ""
+                } }.getOrNull().orEmpty()
+                val text = resolver.openInputStream(uri)?.use { WordImport.read(it, encoding) } ?: error("无法读取所选文件，请重新选择")
+                val format = when {
+                    name.endsWith(".jsonl", true) || name.endsWith(".ndjson", true) -> "jsonl"
+                    else -> "auto"
+                }
+                repo.previewImport(WordImport.parse(text, format), target) to name
+            }
+            if (target == null && bookName.value.isBlank()) {
+                saved["bookName"] = fileName.substringBeforeLast('.', fileName).trim().take(80).ifBlank { "导入词库" }
+            }
+            importPreview.value = preview
+            saved["importSource"] = "文件导入"
+        } catch (e: CancellationException) {
+            throw e
+        } catch (e: Exception) {
+            val message = when (e) {
+                is SecurityException -> "文件访问权限已失效，请重新选择文件；云盘文件请先下载到本机再选择"
+                is java.io.FileNotFoundException -> "文件无法读取，请确认文件已下载且未被移动或删除，再重新选择"
+                is java.io.IOException -> "读取文件失败，请确认文件已完整下载；可复制到手机的下载目录后重新选择"
+                else -> e.message ?: "导入文件失败，请检查格式后重新选择"
+            }
+            fileImportError.value = message
+            throw IllegalArgumentException(message, e)
         }
-        saved["importSource"] = "文件导入"
     }
     fun clearPreview() { if (!busy.value) importPreview.value = null }
     fun commitImport(update: Boolean) = action {

@@ -1,8 +1,8 @@
 package com.wordtrail.app.data
 
-import com.google.gson.JsonParser
 import java.io.InputStream
 import java.nio.ByteBuffer
+import java.nio.charset.Charset
 import java.nio.charset.CodingErrorAction
 
 data class ImportIssue(val line: Int, val reason: String)
@@ -14,7 +14,7 @@ object WordImport {
     const val MAX_ROWS = 50000
     const val TEMPLATE = "english,meaning,phonetic,partOfSpeech,example,translation\r\napple,苹果,/ˈæpəl/,n.,I ate an apple.,我吃了一个苹果。\r\nbook,书籍,,n.,This is a book.,这是一本书。\r\n"
 
-    fun read(input: InputStream): String {
+    fun read(input: InputStream, encoding: String = "auto"): String {
         val output = java.io.ByteArrayOutputStream()
         val buffer = ByteArray(8192)
         while (true) {
@@ -23,14 +23,20 @@ object WordImport {
             require(output.size() + count <= MAX_BYTES) { "文件超过 20 MB，请拆分后导入" }
             output.write(buffer, 0, count)
         }
-        return decode(output.toByteArray())
+        return decode(output.toByteArray(), encoding)
     }
 
-    fun decode(bytes: ByteArray): String {
+    fun decode(bytes: ByteArray, encoding: String = "auto"): String {
         require(bytes.size <= MAX_BYTES) { "文件超过 20 MB，请拆分后导入" }
+        val signature = bytes.take(4).map { it.toInt() and 255 }
+        require(signature != listOf(0x50, 0x4B, 0x03, 0x04) && signature != listOf(0xD0, 0xCF, 0x11, 0xE0)) {
+            "这是 Excel 工作簿或压缩文件，请先另存为 CSV UTF-8 或 Tab 分隔 TXT 再导入"
+        }
         val charset = when {
             bytes.size >= 2 && bytes[0] == 0xFF.toByte() && bytes[1] == 0xFE.toByte() -> Charsets.UTF_16LE
             bytes.size >= 2 && bytes[0] == 0xFE.toByte() && bytes[1] == 0xFF.toByte() -> Charsets.UTF_16BE
+            bytes.size >= 3 && bytes.take(3) == listOf(0xEF.toByte(), 0xBB.toByte(), 0xBF.toByte()) -> Charsets.UTF_8
+            encoding == "gb18030" -> Charset.forName("GB18030")
             else -> Charsets.UTF_8
         }
         return try {
@@ -39,7 +45,7 @@ object WordImport {
                     require('\u0000' !in it) { "文件编码无法识别，请另存为 UTF-8 后重试" }
                 }
         } catch (e: java.nio.charset.CharacterCodingException) {
-            throw IllegalArgumentException("文件编码无法识别，请另存为 UTF-8 后重试", e)
+            throw IllegalArgumentException("文件编码无法识别，请另存为 UTF-8；若是 Excel 的 ANSI 文件，可选择 GBK / GB18030 后重新选择文件", e)
         }
     }
 
@@ -47,21 +53,32 @@ object WordImport {
         require(raw.toByteArray(Charsets.UTF_8).size <= MAX_BYTES) { "内容超过 20 MB，请拆分后导入" }
         val text = raw.removePrefix("\uFEFF").replace("\r\n", "\n").replace('\r', '\n')
         if (text.isBlank()) return ParsedImport(emptyList(), emptyList())
-        if (format != "tsv" && (text.trimStart().startsWith("[") || text.trimStart().startsWith("{"))) return json(text)
-        val delimiter = if (format == "tsv" || (format != "csv" && text.lineSequence().first { it.isNotBlank() }.contains('\t'))) '\t' else ','
-        val records = records(text, delimiter)
+        if (format == "jsonl" || (format != "tsv" && (text.trimStart().startsWith("[") || text.trimStart().startsWith("{")))) {
+            return JsonWordImport.parse(text, format == "jsonl")
+        }
+        val delimiter = if (format == "tsv") '\t' else detectDelimiter(text)
+        // 普通 TXT/TSV 中的引号是文本；只有 CSV 按引号、逗号和跨行字段解析。
+        val records = if (delimiter == '\t') tabRecords(text) else records(text, delimiter)
         val words = mutableListOf<Word>()
         val issues = mutableListOf<ImportIssue>()
         var header: List<String>? = null
         records.forEachIndexed { index, record ->
             if (record.error != null) { issues += ImportIssue(record.line, record.error); return@forEachIndexed }
             val fields = record.fields.map { it.trim() }
-            val aliases = fields.map { alias(it) }
+            var aliases = fields.map { alias(it) }
+            if ("english" in aliases && "meaning" !in aliases && "translation" in aliases) {
+                aliases = aliases.map { if (it == "translation") "meaning" else it }
+            }
             if (index == 0 && "english" in aliases && "meaning" in aliases) {
                 header = aliases
-                require("meaning" in header!!) { "表头缺少 meaning（中文释义）列" }
                 require(aliases.size in 2..32 && aliases.distinct().size == aliases.size) { "表头列重复或数量不正确" }
                 return@forEachIndexed
+            }
+            if (header == null && delimiter == '\t') {
+                dictionaryTabValues(fields)?.let {
+                    addWord(it, record.line, words, issues)
+                    return@forEachIndexed
+                }
             }
             if (if (header == null) fields.size !in 2..6 else fields.size != header!!.size) {
                 issues += ImportIssue(record.line, "字段数量不正确，需要英文、中文释义，可附加音标、词性、例句、翻译")
@@ -76,8 +93,8 @@ object WordImport {
     }
 
     private fun alias(name: String): String = when (name.trim().lowercase()) {
-        "english", "英文", "单词" -> "english"
-        "meaning", "中文", "中文释义", "释义" -> "meaning"
+        "english", "word", "term", "英文", "单词" -> "english"
+        "meaning", "definition", "chinese", "translations", "中文", "中文释义", "释义" -> "meaning"
         "phonetic", "音标" -> "phonetic"
         "partofspeech", "词性" -> "partOfSpeech"
         "example", "例句" -> "example"
@@ -85,7 +102,7 @@ object WordImport {
         else -> name
     }
 
-    private fun addWord(values: Map<String, String>, line: Int, words: MutableList<Word>, issues: MutableList<ImportIssue>) {
+    internal fun addWord(values: Map<String, String>, line: Int, words: MutableList<Word>, issues: MutableList<ImportIssue>) {
         val english = values["english"].orEmpty().trim()
         val meaning = values["meaning"].orEmpty().trim()
         val reason = when {
@@ -99,28 +116,43 @@ object WordImport {
             meaning, values["example"].orEmpty().trim(), values["translation"].orEmpty().trim())
     }
 
-    private fun json(text: String): ParsedImport {
-        val root = try { JsonParser.parseString(text) } catch (e: Exception) { throw IllegalArgumentException("JSON 格式损坏，请检查文件", e) }
-        val array = when {
-            root.isJsonArray -> root.asJsonArray
-            root.isJsonObject && root.asJsonObject.get("format")?.asString == "wordtrail-backup" -> {
-                require(root.asJsonObject.get("version")?.asInt == 1) { "暂不支持此备份版本" }
-                root.asJsonObject.getAsJsonArray("entries")
-            }
-            else -> error("不支持的 JSON：请选择项目 words.json 数组或拾词备份")
-        } ?: error("JSON 缺少词条数组")
-        require(array.size() <= MAX_ROWS) { "最多导入 50000 个词条，请拆分文件" }
-        val words = mutableListOf<Word>(); val issues = mutableListOf<ImportIssue>()
-        array.forEachIndexed { index, item ->
-            try {
-                val obj = item.asJsonObject.let { it.getAsJsonObject("word") ?: it }
-                val values = listOf("english", "meaning", "phonetic", "partOfSpeech", "example", "translation").associateWith {
-                    obj.get(it)?.takeUnless { value -> value.isJsonNull }?.asString.orEmpty()
-                }
-                addWord(values, index + 1, words, issues)
-            } catch (_: Exception) { issues += ImportIssue(index + 1, "JSON 词条结构不正确") }
+    private fun detectDelimiter(text: String): Char {
+        val counts = linkedMapOf('\t' to 0, ',' to 0, ';' to 0)
+        var quoted = false
+        for (character in text.trimStart('\n')) {
+            if (character == '"') quoted = !quoted
+            if (!quoted && character == '\n') break
+            if (!quoted && character in counts) counts[character] = counts.getValue(character) + 1
         }
-        return ParsedImport(words, issues)
+        return counts.maxBy { it.value }.takeIf { it.value > 0 }?.key ?: ','
+    }
+
+    private fun tabRecords(text: String): List<Record> {
+        val result = mutableListOf<Record>()
+        text.lineSequence().forEachIndexed { index, line ->
+            if (line.isNotBlank()) {
+                require(result.size < MAX_ROWS + 1) { "最多导入 50000 个词条，请拆分文件" }
+                result += Record(index + 1, line.split('\t'), null)
+            }
+        }
+        return result
+    }
+
+    // 常见词典 TSV：3 列（词/释义/短语）或 6/13 列（词/美音/英音/释义/短语/例句/…）。
+    private fun dictionaryTabValues(fields: List<String>): Map<String, String>? {
+        if (fields.size !in setOf(3, 6, 13)) return null
+        val definitions = fields[if (fields.size == 3) 1 else 3]
+        if (!Regex("^[a-zA-Z. /&-]*::").containsMatchIn(definitions)) return null
+        val meanings = definitions.split('¦').map { it.split("::", limit = 3) }.filter { it.size >= 2 }
+        val sentence = if (fields.size >= 6) fields[5].substringBefore('¦').split("::", limit = 2) else emptyList()
+        return mapOf(
+            "english" to fields[0],
+            "meaning" to meanings.joinToString("；") { if (it[0].isBlank()) it[1] else "${it[0].trimEnd('.')}. ${it[1]}" },
+            "phonetic" to if (fields.size >= 6) fields[1].ifBlank { fields[2] } else "",
+            "partOfSpeech" to meanings.map { it[0] }.filter { it.isNotBlank() }.distinct().joinToString(" / "),
+            "example" to if (sentence.size == 2) sentence[0] else "",
+            "translation" to if (sentence.size == 2) sentence[1] else ""
+        )
     }
 
     private data class Record(val line: Int, val fields: List<String>, val error: String?)

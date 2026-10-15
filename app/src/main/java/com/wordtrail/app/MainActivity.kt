@@ -284,7 +284,7 @@ private fun StudyScreen(words: List<WordState>, today: Int, id: String?, mode: S
         Surface(color = MaterialTheme.colorScheme.tertiaryContainer, shape = RoundedCornerShape(16.dp)) {
             Text("请及时备份：卸载应用或清除应用数据会删除未备份的本地记录。正常覆盖升级会保留数据。备份文件为明文 JSON，请妥善保管。", Modifier.padding(16.dp))
         }
-        Text("拾词 1.1.0 · 当前词库 $count 词\n无需登录 · 无联网权限\n复习优先未掌握词，并从最久未看的 5 个词中随机抽取。\n今日数量按学习时设备本地日期去重。", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Text("拾词 1.1.1 · 当前词库 $count 词\n无需登录 · 无联网权限\n复习优先未掌握词，并从最久未看的 5 个词中随机抽取。\n今日数量按学习时设备本地日期去重。", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         Spacer(Modifier.height(12.dp))
     }
 }

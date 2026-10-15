@@ -139,6 +139,8 @@ private fun BookEditor(vm: StudyViewModel, books: List<BookSummary>, busy: Boole
     val target by vm.targetBook.collectAsStateWithLifecycle()
     val preview by vm.importPreview.collectAsStateWithLifecycle()
     val error by vm.error.collectAsStateWithLifecycle()
+    val fileError by vm.fileImportError.collectAsStateWithLifecycle()
+    val encoding by vm.fileEncoding.collectAsStateWithLifecycle()
     val text by vm.importText.collectAsStateWithLifecycle()
     var english by rememberSaveable { mutableStateOf("") }
     var meaning by rememberSaveable { mutableStateOf("") }
@@ -151,8 +153,11 @@ private fun BookEditor(vm: StudyViewModel, books: List<BookSummary>, busy: Boole
             Column(Modifier.fillMaxSize().padding(20.dp)) {
                 Text(when(editor) { "create" -> "新建词库"; "single" -> "添加单词"; "file" -> "文件导入"; else -> "粘贴导入" }, style = MaterialTheme.typography.headlineSmall)
                 if (busy) { LinearProgressIndicator(Modifier.fillMaxWidth().padding(vertical = 8.dp)); Text("正在处理，请稍候…") }
-                error?.let { Text(it, color = if (it.startsWith("操作未完成")) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary) }
+                if (editor != "file") error?.let { Text(it, color = if (it.startsWith("操作未完成")) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary) }
                 Column(Modifier.weight(1f).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    if (editor == "file" && fileError != null) {
+                        Text(fileError!!, color = MaterialTheme.colorScheme.error, modifier = Modifier.testTag("file-import-error"))
+                    }
                     if (preview != null) {
                         val p = preview!!
                         Text("导入预览", style = MaterialTheme.typography.titleLarge)
@@ -192,15 +197,19 @@ private fun BookEditor(vm: StudyViewModel, books: List<BookSummary>, busy: Boole
                             }
                         }
                         if (target == null) {
-                            OutlinedTextField(name, { vm.bookName(it.take(80)) }, label = { Text("词库名称（必填）") }, singleLine = true, enabled = !busy, modifier = Modifier.fillMaxWidth())
+                            OutlinedTextField(name, { vm.bookName(it.take(80)) }, label = { Text(if (editor == "file") "词库名称（留空使用文件名）" else "词库名称（必填）") }, singleLine = true, enabled = !busy, modifier = Modifier.fillMaxWidth())
                             OutlinedTextField(description, { vm.bookDescription(it.take(1000)) }, label = { Text("描述（可选）") }, enabled = !busy, modifier = Modifier.fillMaxWidth())
                         }
                         when(editor) {
                             "create" -> Button(onClick = vm::createBook, enabled = !busy && name.isNotBlank()) { Text("创建并添加单词") }
                             "file" -> {
-                                Text("支持 CSV、Tab 分隔 TXT、项目 words.json 和拾词 JSON 备份中的词条。备份学习记录请使用设置中的“导入并合并备份”。")
-                                Text("UTF-8（可带 BOM），另支持带 BOM 的 UTF-16。最大 20 MB、50000 条。CSV 可用导出的模板填写，支持引号、逗号与字段内换行。")
-                                Button(onClick = { file.launch(arrayOf("*/*")) }, enabled = !busy && (target != null || name.isNotBlank())) { Text("选择文件并预览") }
+                                Text("支持 CSV、Tab 分隔 TXT/TSV、JSON/JSONL 词库（english/meaning 或 word/translations），以及拾词备份中的词条。恢复学习记录请使用设置中的备份导入。")
+                                Text("默认 UTF-8（可带 BOM）或带 BOM 的 UTF-16。最大 20 MB、50000 条。CSV 自动识别逗号、分号或 Tab，支持引号及字段内换行。")
+                                Text("文件编码", style = MaterialTheme.typography.titleSmall)
+                                FilterChip(encoding == "auto", { vm.fileEncoding("auto") }, enabled = !busy, label = { Text("UTF-8 / BOM 自动") })
+                                FilterChip(encoding == "gb18030", { vm.fileEncoding("gb18030") }, enabled = !busy, label = { Text("GBK / GB18030（Excel ANSI）") })
+                                Text("编码报错时可切换编码后重新选择文件。选择文件后先预览，确认才会写入。", style = MaterialTheme.typography.bodySmall)
+                                Button(onClick = { file.launch(arrayOf("*/*")) }, enabled = !busy) { Text("选择文件并预览") }
                             }
                             else -> {
                                 Text("每行：英文单词 + Tab + 中文释义。请手动长按输入框粘贴，不会主动读取剪贴板。")
