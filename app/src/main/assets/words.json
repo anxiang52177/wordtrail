@@ -1,0 +1,2882 @@
+[
+  {
+    "english": "apple",
+    "phonetic": "/ˈæpəl/",
+    "partOfSpeech": "n.",
+    "meaning": "苹果",
+    "example": "She ate an apple after lunch.",
+    "translation": "她午饭后吃了一个苹果。",
+    "id": "apple"
+  },
+  {
+    "english": "banana",
+    "phonetic": "/bəˈnænə/",
+    "partOfSpeech": "n.",
+    "meaning": "香蕉",
+    "example": "I put a banana in my bag.",
+    "translation": "我在包里放了一根香蕉。",
+    "id": "banana"
+  },
+  {
+    "english": "orange",
+    "phonetic": "/ˈɔrɪndʒ/",
+    "partOfSpeech": "n.",
+    "meaning": "橙子",
+    "example": "This orange tastes sweet.",
+    "translation": "这个橙子吃起来很甜。",
+    "id": "orange"
+  },
+  {
+    "english": "bread",
+    "phonetic": "/bred/",
+    "partOfSpeech": "n.",
+    "meaning": "面包",
+    "example": "We need some bread for breakfast.",
+    "translation": "我们早餐需要一些面包。",
+    "id": "bread"
+  },
+  {
+    "english": "rice",
+    "phonetic": "/raɪs/",
+    "partOfSpeech": "n.",
+    "meaning": "米饭；大米",
+    "example": "The rice is ready.",
+    "translation": "米饭做好了。",
+    "id": "rice"
+  },
+  {
+    "english": "water",
+    "phonetic": "/ˈwɔtər/",
+    "partOfSpeech": "n.",
+    "meaning": "水",
+    "example": "Please bring me a glass of water.",
+    "translation": "请给我拿一杯水。",
+    "id": "water"
+  },
+  {
+    "english": "milk",
+    "phonetic": "/mɪlk/",
+    "partOfSpeech": "n.",
+    "meaning": "牛奶",
+    "example": "There is milk in the fridge.",
+    "translation": "冰箱里有牛奶。",
+    "id": "milk"
+  },
+  {
+    "english": "coffee",
+    "phonetic": "/ˈkɔfi/",
+    "partOfSpeech": "n.",
+    "meaning": "咖啡",
+    "example": "My father drinks coffee every morning.",
+    "translation": "我爸爸每天早晨喝咖啡。",
+    "id": "coffee"
+  },
+  {
+    "english": "tea",
+    "phonetic": "/ti/",
+    "partOfSpeech": "n.",
+    "meaning": "茶",
+    "example": "Would you like some tea?",
+    "translation": "你想喝点茶吗？",
+    "id": "tea"
+  },
+  {
+    "english": "egg",
+    "phonetic": "/eɡ/",
+    "partOfSpeech": "n.",
+    "meaning": "鸡蛋",
+    "example": "I boiled an egg for breakfast.",
+    "translation": "我早餐煮了一个鸡蛋。",
+    "id": "egg"
+  },
+  {
+    "english": "meat",
+    "phonetic": "/mit/",
+    "partOfSpeech": "n.",
+    "meaning": "肉",
+    "example": "Cut the meat into small pieces.",
+    "translation": "把肉切成小块。",
+    "id": "meat"
+  },
+  {
+    "english": "fish",
+    "phonetic": "/fɪʃ/",
+    "partOfSpeech": "n.",
+    "meaning": "鱼；鱼肉",
+    "example": "A small fish swam past the boat.",
+    "translation": "一条小鱼从船旁游过。",
+    "id": "fish"
+  },
+  {
+    "english": "chicken",
+    "phonetic": "/ˈtʃɪkɪn/",
+    "partOfSpeech": "n.",
+    "meaning": "鸡；鸡肉",
+    "example": "We had chicken and rice for dinner.",
+    "translation": "我们晚饭吃了鸡肉和米饭。",
+    "id": "chicken"
+  },
+  {
+    "english": "vegetable",
+    "phonetic": "/ˈvedʒtəbəl/",
+    "partOfSpeech": "n.",
+    "meaning": "蔬菜",
+    "example": "A carrot is a vegetable.",
+    "translation": "胡萝卜是一种蔬菜。",
+    "id": "vegetable"
+  },
+  {
+    "english": "fruit",
+    "phonetic": "/frut/",
+    "partOfSpeech": "n.",
+    "meaning": "水果",
+    "example": "Fresh fruit is on the table.",
+    "translation": "新鲜水果在桌上。",
+    "id": "fruit"
+  },
+  {
+    "english": "soup",
+    "phonetic": "/sup/",
+    "partOfSpeech": "n.",
+    "meaning": "汤",
+    "example": "The soup is still hot.",
+    "translation": "汤还很烫。",
+    "id": "soup"
+  },
+  {
+    "english": "sugar",
+    "phonetic": "/ˈʃʊɡər/",
+    "partOfSpeech": "n.",
+    "meaning": "糖",
+    "example": "Do you take sugar in your tea?",
+    "translation": "你喝茶加糖吗？",
+    "id": "sugar"
+  },
+  {
+    "english": "salt",
+    "phonetic": "/sɔlt/",
+    "partOfSpeech": "n.",
+    "meaning": "盐",
+    "example": "Add a little salt to the soup.",
+    "translation": "在汤里加一点盐。",
+    "id": "salt"
+  },
+  {
+    "english": "cake",
+    "phonetic": "/keɪk/",
+    "partOfSpeech": "n.",
+    "meaning": "蛋糕",
+    "example": "We made a cake for her birthday.",
+    "translation": "我们为她的生日做了一个蛋糕。",
+    "id": "cake"
+  },
+  {
+    "english": "breakfast",
+    "phonetic": "/ˈbrekfəst/",
+    "partOfSpeech": "n.",
+    "meaning": "早餐",
+    "example": "Breakfast starts at seven.",
+    "translation": "早餐七点开始。",
+    "id": "breakfast"
+  },
+  {
+    "english": "lunch",
+    "phonetic": "/lʌntʃ/",
+    "partOfSpeech": "n.",
+    "meaning": "午餐",
+    "example": "Let's have lunch together.",
+    "translation": "我们一起吃午饭吧。",
+    "id": "lunch"
+  },
+  {
+    "english": "dinner",
+    "phonetic": "/ˈdɪnər/",
+    "partOfSpeech": "n.",
+    "meaning": "晚餐；正餐",
+    "example": "Dinner will be ready soon.",
+    "translation": "晚饭很快就好了。",
+    "id": "dinner"
+  },
+  {
+    "english": "table",
+    "phonetic": "/ˈteɪbəl/",
+    "partOfSpeech": "n.",
+    "meaning": "桌子",
+    "example": "Your keys are on the table.",
+    "translation": "你的钥匙在桌上。",
+    "id": "table"
+  },
+  {
+    "english": "chair",
+    "phonetic": "/tʃer/",
+    "partOfSpeech": "n.",
+    "meaning": "椅子",
+    "example": "Please sit on this chair.",
+    "translation": "请坐这把椅子。",
+    "id": "chair"
+  },
+  {
+    "english": "bed",
+    "phonetic": "/bed/",
+    "partOfSpeech": "n.",
+    "meaning": "床",
+    "example": "The cat is sleeping on the bed.",
+    "translation": "猫正睡在床上。",
+    "id": "bed"
+  },
+  {
+    "english": "door",
+    "phonetic": "/dɔr/",
+    "partOfSpeech": "n.",
+    "meaning": "门",
+    "example": "Someone is standing at the door.",
+    "translation": "有人站在门口。",
+    "id": "door"
+  },
+  {
+    "english": "window",
+    "phonetic": "/ˈwɪndoʊ/",
+    "partOfSpeech": "n.",
+    "meaning": "窗户",
+    "example": "Open the window for some fresh air.",
+    "translation": "打开窗户透透气。",
+    "id": "window"
+  },
+  {
+    "english": "room",
+    "phonetic": "/rum/",
+    "partOfSpeech": "n.",
+    "meaning": "房间；空间",
+    "example": "This room gets plenty of sunlight.",
+    "translation": "这个房间阳光充足。",
+    "id": "room"
+  },
+  {
+    "english": "house",
+    "phonetic": "/haʊs/",
+    "partOfSpeech": "n.",
+    "meaning": "房子",
+    "example": "Their house has a red door.",
+    "translation": "他们的房子有一扇红色的门。",
+    "id": "house"
+  },
+  {
+    "english": "home",
+    "phonetic": "/hoʊm/",
+    "partOfSpeech": "n.",
+    "meaning": "家",
+    "example": "Our home is near the park.",
+    "translation": "我们的家在公园附近。",
+    "id": "home"
+  },
+  {
+    "english": "kitchen",
+    "phonetic": "/ˈkɪtʃən/",
+    "partOfSpeech": "n.",
+    "meaning": "厨房",
+    "example": "Dad is cooking in the kitchen.",
+    "translation": "爸爸正在厨房做饭。",
+    "id": "kitchen"
+  },
+  {
+    "english": "garden",
+    "phonetic": "/ˈɡɑrdən/",
+    "partOfSpeech": "n.",
+    "meaning": "花园",
+    "example": "We grow flowers in the garden.",
+    "translation": "我们在花园里种花。",
+    "id": "garden"
+  },
+  {
+    "english": "school",
+    "phonetic": "/skul/",
+    "partOfSpeech": "n.",
+    "meaning": "学校",
+    "example": "The school is beside the river.",
+    "translation": "学校在河边。",
+    "id": "school"
+  },
+  {
+    "english": "teacher",
+    "phonetic": "/ˈtitʃər/",
+    "partOfSpeech": "n.",
+    "meaning": "老师",
+    "example": "Our teacher explains things clearly.",
+    "translation": "我们的老师讲解得很清楚。",
+    "id": "teacher"
+  },
+  {
+    "english": "student",
+    "phonetic": "/ˈstudənt/",
+    "partOfSpeech": "n.",
+    "meaning": "学生",
+    "example": "Every student has a notebook.",
+    "translation": "每个学生都有一本笔记本。",
+    "id": "student"
+  },
+  {
+    "english": "book",
+    "phonetic": "/bʊk/",
+    "partOfSpeech": "n.",
+    "meaning": "书",
+    "example": "This book is about animals.",
+    "translation": "这本书讲的是动物。",
+    "id": "book"
+  },
+  {
+    "english": "page",
+    "phonetic": "/peɪdʒ/",
+    "partOfSpeech": "n.",
+    "meaning": "页",
+    "example": "Turn to the next page.",
+    "translation": "翻到下一页。",
+    "id": "page"
+  },
+  {
+    "english": "pen",
+    "phonetic": "/pen/",
+    "partOfSpeech": "n.",
+    "meaning": "钢笔；笔",
+    "example": "May I borrow your pen?",
+    "translation": "我可以借用你的笔吗？",
+    "id": "pen"
+  },
+  {
+    "english": "pencil",
+    "phonetic": "/ˈpensəl/",
+    "partOfSpeech": "n.",
+    "meaning": "铅笔",
+    "example": "Write your name with a pencil.",
+    "translation": "用铅笔写下你的名字。",
+    "id": "pencil"
+  },
+  {
+    "english": "paper",
+    "phonetic": "/ˈpeɪpər/",
+    "partOfSpeech": "n.",
+    "meaning": "纸",
+    "example": "I need a piece of paper.",
+    "translation": "我需要一张纸。",
+    "id": "paper"
+  },
+  {
+    "english": "letter",
+    "phonetic": "/ˈletər/",
+    "partOfSpeech": "n.",
+    "meaning": "信；字母",
+    "example": "She wrote a letter to her friend.",
+    "translation": "她给朋友写了一封信。",
+    "id": "letter"
+  },
+  {
+    "english": "word",
+    "phonetic": "/wɜrd/",
+    "partOfSpeech": "n.",
+    "meaning": "单词；词",
+    "example": "I learned a new word today.",
+    "translation": "我今天学了一个新单词。",
+    "id": "word"
+  },
+  {
+    "english": "sentence",
+    "phonetic": "/ˈsentəns/",
+    "partOfSpeech": "n.",
+    "meaning": "句子",
+    "example": "Read the sentence aloud.",
+    "translation": "大声读出这个句子。",
+    "id": "sentence"
+  },
+  {
+    "english": "question",
+    "phonetic": "/ˈkwestʃən/",
+    "partOfSpeech": "n.",
+    "meaning": "问题",
+    "example": "That is an interesting question.",
+    "translation": "那是一个有趣的问题。",
+    "id": "question"
+  },
+  {
+    "english": "answer",
+    "phonetic": "/ˈænsər/",
+    "partOfSpeech": "n.",
+    "meaning": "答案",
+    "example": "I found the answer in the book.",
+    "translation": "我在书中找到了答案。",
+    "id": "answer"
+  },
+  {
+    "english": "language",
+    "phonetic": "/ˈlæŋɡwɪdʒ/",
+    "partOfSpeech": "n.",
+    "meaning": "语言",
+    "example": "Learning a language takes practice.",
+    "translation": "学习一门语言需要练习。",
+    "id": "language"
+  },
+  {
+    "english": "story",
+    "phonetic": "/ˈstɔri/",
+    "partOfSpeech": "n.",
+    "meaning": "故事",
+    "example": "Tell me a story before bed.",
+    "translation": "睡前给我讲个故事吧。",
+    "id": "story"
+  },
+  {
+    "english": "music",
+    "phonetic": "/ˈmjuzɪk/",
+    "partOfSpeech": "n.",
+    "meaning": "音乐",
+    "example": "Soft music helps me relax.",
+    "translation": "轻柔的音乐帮助我放松。",
+    "id": "music"
+  },
+  {
+    "english": "song",
+    "phonetic": "/sɔŋ/",
+    "partOfSpeech": "n.",
+    "meaning": "歌曲",
+    "example": "This song reminds me of home.",
+    "translation": "这首歌让我想起家。",
+    "id": "song"
+  },
+  {
+    "english": "picture",
+    "phonetic": "/ˈpɪktʃər/",
+    "partOfSpeech": "n.",
+    "meaning": "图片；画",
+    "example": "She drew a picture of a bird.",
+    "translation": "她画了一幅鸟的画。",
+    "id": "picture"
+  },
+  {
+    "english": "photo",
+    "phonetic": "/ˈfoʊtoʊ/",
+    "partOfSpeech": "n.",
+    "meaning": "照片",
+    "example": "We took a photo by the lake.",
+    "translation": "我们在湖边拍了一张照片。",
+    "id": "photo"
+  },
+  {
+    "english": "movie",
+    "phonetic": "/ˈmuvi/",
+    "partOfSpeech": "n.",
+    "meaning": "电影",
+    "example": "The movie starts at eight.",
+    "translation": "电影八点开始。",
+    "id": "movie"
+  },
+  {
+    "english": "game",
+    "phonetic": "/ɡeɪm/",
+    "partOfSpeech": "n.",
+    "meaning": "游戏；比赛",
+    "example": "We played a game after dinner.",
+    "translation": "我们晚饭后玩了一个游戏。",
+    "id": "game"
+  },
+  {
+    "english": "phone",
+    "phonetic": "/foʊn/",
+    "partOfSpeech": "n.",
+    "meaning": "电话；手机",
+    "example": "My phone is in my pocket.",
+    "translation": "我的手机在口袋里。",
+    "id": "phone"
+  },
+  {
+    "english": "computer",
+    "phonetic": "/kəmˈpjutər/",
+    "partOfSpeech": "n.",
+    "meaning": "电脑",
+    "example": "She uses a computer for work.",
+    "translation": "她用电脑工作。",
+    "id": "computer"
+  },
+  {
+    "english": "screen",
+    "phonetic": "/skrin/",
+    "partOfSpeech": "n.",
+    "meaning": "屏幕",
+    "example": "The screen is too bright.",
+    "translation": "屏幕太亮了。",
+    "id": "screen"
+  },
+  {
+    "english": "bag",
+    "phonetic": "/bæɡ/",
+    "partOfSpeech": "n.",
+    "meaning": "包；袋子",
+    "example": "This bag is full of books.",
+    "translation": "这个包里装满了书。",
+    "id": "bag"
+  },
+  {
+    "english": "box",
+    "phonetic": "/bɑks/",
+    "partOfSpeech": "n.",
+    "meaning": "盒子；箱子",
+    "example": "Put the toys in the box.",
+    "translation": "把玩具放进箱子里。",
+    "id": "box"
+  },
+  {
+    "english": "key",
+    "phonetic": "/ki/",
+    "partOfSpeech": "n.",
+    "meaning": "钥匙",
+    "example": "I found my key under the chair.",
+    "translation": "我在椅子下面找到了钥匙。",
+    "id": "key"
+  },
+  {
+    "english": "clock",
+    "phonetic": "/klɑk/",
+    "partOfSpeech": "n.",
+    "meaning": "钟",
+    "example": "The clock on the wall is slow.",
+    "translation": "墙上的钟走慢了。",
+    "id": "clock"
+  },
+  {
+    "english": "watch",
+    "phonetic": "/wɑtʃ/",
+    "partOfSpeech": "n.",
+    "meaning": "手表",
+    "example": "Her watch shows the correct time.",
+    "translation": "她的手表显示的时间准确。",
+    "id": "watch"
+  },
+  {
+    "english": "money",
+    "phonetic": "/ˈmʌni/",
+    "partOfSpeech": "n.",
+    "meaning": "钱",
+    "example": "He is saving money for a bicycle.",
+    "translation": "他正在攒钱买自行车。",
+    "id": "money"
+  },
+  {
+    "english": "price",
+    "phonetic": "/praɪs/",
+    "partOfSpeech": "n.",
+    "meaning": "价格",
+    "example": "The price includes breakfast.",
+    "translation": "这个价格包含早餐。",
+    "id": "price"
+  },
+  {
+    "english": "shop",
+    "phonetic": "/ʃɑp/",
+    "partOfSpeech": "n.",
+    "meaning": "商店",
+    "example": "The shop closes at nine.",
+    "translation": "这家商店九点关门。",
+    "id": "shop"
+  },
+  {
+    "english": "market",
+    "phonetic": "/ˈmɑrkɪt/",
+    "partOfSpeech": "n.",
+    "meaning": "市场",
+    "example": "We buy vegetables at the market.",
+    "translation": "我们在市场买蔬菜。",
+    "id": "market"
+  },
+  {
+    "english": "street",
+    "phonetic": "/strit/",
+    "partOfSpeech": "n.",
+    "meaning": "街道",
+    "example": "The street is quiet at night.",
+    "translation": "这条街夜里很安静。",
+    "id": "street"
+  },
+  {
+    "english": "road",
+    "phonetic": "/roʊd/",
+    "partOfSpeech": "n.",
+    "meaning": "道路",
+    "example": "This road leads to the village.",
+    "translation": "这条路通往村庄。",
+    "id": "road"
+  },
+  {
+    "english": "city",
+    "phonetic": "/ˈsɪti/",
+    "partOfSpeech": "n.",
+    "meaning": "城市",
+    "example": "The city has many old buildings.",
+    "translation": "这座城市有许多老建筑。",
+    "id": "city"
+  },
+  {
+    "english": "village",
+    "phonetic": "/ˈvɪlɪdʒ/",
+    "partOfSpeech": "n.",
+    "meaning": "村庄",
+    "example": "My grandparents live in a village.",
+    "translation": "我的祖父母住在一个村庄里。",
+    "id": "village"
+  },
+  {
+    "english": "country",
+    "phonetic": "/ˈkʌntri/",
+    "partOfSpeech": "n.",
+    "meaning": "国家；乡村",
+    "example": "She wants to visit another country.",
+    "translation": "她想去另一个国家旅行。",
+    "id": "country"
+  },
+  {
+    "english": "world",
+    "phonetic": "/wɜrld/",
+    "partOfSpeech": "n.",
+    "meaning": "世界",
+    "example": "People around the world enjoy music.",
+    "translation": "世界各地的人都喜欢音乐。",
+    "id": "world"
+  },
+  {
+    "english": "map",
+    "phonetic": "/mæp/",
+    "partOfSpeech": "n.",
+    "meaning": "地图",
+    "example": "Look at the map before you leave.",
+    "translation": "出发前看一下地图。",
+    "id": "map"
+  },
+  {
+    "english": "car",
+    "phonetic": "/kɑr/",
+    "partOfSpeech": "n.",
+    "meaning": "汽车",
+    "example": "Their car is parked outside.",
+    "translation": "他们的汽车停在外面。",
+    "id": "car"
+  },
+  {
+    "english": "bus",
+    "phonetic": "/bʌs/",
+    "partOfSpeech": "n.",
+    "meaning": "公共汽车",
+    "example": "The bus arrives every ten minutes.",
+    "translation": "公共汽车每十分钟来一班。",
+    "id": "bus"
+  },
+  {
+    "english": "train",
+    "phonetic": "/treɪn/",
+    "partOfSpeech": "n.",
+    "meaning": "火车",
+    "example": "We took a train to the city.",
+    "translation": "我们坐火车去了那座城市。",
+    "id": "train"
+  },
+  {
+    "english": "bicycle",
+    "phonetic": "/ˈbaɪsɪkəl/",
+    "partOfSpeech": "n.",
+    "meaning": "自行车",
+    "example": "He rides a bicycle to school.",
+    "translation": "他骑自行车上学。",
+    "id": "bicycle"
+  },
+  {
+    "english": "plane",
+    "phonetic": "/pleɪn/",
+    "partOfSpeech": "n.",
+    "meaning": "飞机",
+    "example": "The plane landed safely.",
+    "translation": "飞机安全着陆了。",
+    "id": "plane"
+  },
+  {
+    "english": "boat",
+    "phonetic": "/boʊt/",
+    "partOfSpeech": "n.",
+    "meaning": "船",
+    "example": "A boat crossed the lake.",
+    "translation": "一条船驶过了湖面。",
+    "id": "boat"
+  },
+  {
+    "english": "station",
+    "phonetic": "/ˈsteɪʃən/",
+    "partOfSpeech": "n.",
+    "meaning": "车站",
+    "example": "Meet me at the station.",
+    "translation": "在车站和我见面。",
+    "id": "station"
+  },
+  {
+    "english": "airport",
+    "phonetic": "/ˈerpɔrt/",
+    "partOfSpeech": "n.",
+    "meaning": "机场",
+    "example": "We arrived at the airport early.",
+    "translation": "我们很早就到了机场。",
+    "id": "airport"
+  },
+  {
+    "english": "ticket",
+    "phonetic": "/ˈtɪkɪt/",
+    "partOfSpeech": "n.",
+    "meaning": "票",
+    "example": "Keep your ticket until you arrive.",
+    "translation": "到达前请保管好你的票。",
+    "id": "ticket"
+  },
+  {
+    "english": "hotel",
+    "phonetic": "/hoʊˈtel/",
+    "partOfSpeech": "n.",
+    "meaning": "酒店",
+    "example": "Our hotel is near the beach.",
+    "translation": "我们的酒店靠近海滩。",
+    "id": "hotel"
+  },
+  {
+    "english": "hospital",
+    "phonetic": "/ˈhɑspɪtəl/",
+    "partOfSpeech": "n.",
+    "meaning": "医院",
+    "example": "She works at the local hospital.",
+    "translation": "她在当地医院工作。",
+    "id": "hospital"
+  },
+  {
+    "english": "doctor",
+    "phonetic": "/ˈdɑktər/",
+    "partOfSpeech": "n.",
+    "meaning": "医生",
+    "example": "The doctor asked me to rest.",
+    "translation": "医生让我休息。",
+    "id": "doctor"
+  },
+  {
+    "english": "nurse",
+    "phonetic": "/nɜrs/",
+    "partOfSpeech": "n.",
+    "meaning": "护士",
+    "example": "The nurse brought him some water.",
+    "translation": "护士给他拿来了一些水。",
+    "id": "nurse"
+  },
+  {
+    "english": "family",
+    "phonetic": "/ˈfæməli/",
+    "partOfSpeech": "n.",
+    "meaning": "家庭；家人",
+    "example": "My family eats together on Sundays.",
+    "translation": "我的家人每逢星期天一起吃饭。",
+    "id": "family"
+  },
+  {
+    "english": "friend",
+    "phonetic": "/frend/",
+    "partOfSpeech": "n.",
+    "meaning": "朋友",
+    "example": "A good friend listens to you.",
+    "translation": "好朋友会倾听你的心声。",
+    "id": "friend"
+  },
+  {
+    "english": "mother",
+    "phonetic": "/ˈmʌðər/",
+    "partOfSpeech": "n.",
+    "meaning": "母亲",
+    "example": "My mother loves reading.",
+    "translation": "我妈妈喜欢阅读。",
+    "id": "mother"
+  },
+  {
+    "english": "father",
+    "phonetic": "/ˈfɑðər/",
+    "partOfSpeech": "n.",
+    "meaning": "父亲",
+    "example": "His father taught him to swim.",
+    "translation": "他爸爸教会了他游泳。",
+    "id": "father"
+  },
+  {
+    "english": "parent",
+    "phonetic": "/ˈperənt/",
+    "partOfSpeech": "n.",
+    "meaning": "父亲或母亲；家长",
+    "example": "Each parent received a letter.",
+    "translation": "每位家长都收到了一封信。",
+    "id": "parent"
+  },
+  {
+    "english": "sister",
+    "phonetic": "/ˈsɪstər/",
+    "partOfSpeech": "n.",
+    "meaning": "姐妹",
+    "example": "My sister plays the piano.",
+    "translation": "我的姐姐会弹钢琴。",
+    "id": "sister"
+  },
+  {
+    "english": "brother",
+    "phonetic": "/ˈbrʌðər/",
+    "partOfSpeech": "n.",
+    "meaning": "兄弟",
+    "example": "Her brother is younger than her.",
+    "translation": "她的弟弟比她年纪小。",
+    "id": "brother"
+  },
+  {
+    "english": "child",
+    "phonetic": "/tʃaɪld/",
+    "partOfSpeech": "n.",
+    "meaning": "儿童；孩子",
+    "example": "The child is drawing a tree.",
+    "translation": "那个孩子正在画一棵树。",
+    "id": "child"
+  },
+  {
+    "english": "baby",
+    "phonetic": "/ˈbeɪbi/",
+    "partOfSpeech": "n.",
+    "meaning": "婴儿",
+    "example": "The baby is asleep.",
+    "translation": "婴儿睡着了。",
+    "id": "baby"
+  },
+  {
+    "english": "person",
+    "phonetic": "/ˈpɜrsən/",
+    "partOfSpeech": "n.",
+    "meaning": "人",
+    "example": "Only one person was waiting.",
+    "translation": "只有一个人在等候。",
+    "id": "person"
+  },
+  {
+    "english": "people",
+    "phonetic": "/ˈpipəl/",
+    "partOfSpeech": "n.",
+    "meaning": "人们",
+    "example": "Many people walk here in the evening.",
+    "translation": "许多人晚上在这里散步。",
+    "id": "people"
+  },
+  {
+    "english": "name",
+    "phonetic": "/neɪm/",
+    "partOfSpeech": "n.",
+    "meaning": "名字",
+    "example": "Please write your name here.",
+    "translation": "请在这里写上你的名字。",
+    "id": "name"
+  },
+  {
+    "english": "job",
+    "phonetic": "/dʒɑb/",
+    "partOfSpeech": "n.",
+    "meaning": "工作；职位",
+    "example": "She enjoys her new job.",
+    "translation": "她喜欢自己的新工作。",
+    "id": "job"
+  },
+  {
+    "english": "office",
+    "phonetic": "/ˈɔfɪs/",
+    "partOfSpeech": "n.",
+    "meaning": "办公室",
+    "example": "His office is on the second floor.",
+    "translation": "他的办公室在二楼。",
+    "id": "office"
+  },
+  {
+    "english": "meeting",
+    "phonetic": "/ˈmitɪŋ/",
+    "partOfSpeech": "n.",
+    "meaning": "会议",
+    "example": "The meeting lasted an hour.",
+    "translation": "会议持续了一个小时。",
+    "id": "meeting"
+  },
+  {
+    "english": "time",
+    "phonetic": "/taɪm/",
+    "partOfSpeech": "n.",
+    "meaning": "时间",
+    "example": "We have enough time to walk.",
+    "translation": "我们有足够的时间步行过去。",
+    "id": "time"
+  },
+  {
+    "english": "day",
+    "phonetic": "/deɪ/",
+    "partOfSpeech": "n.",
+    "meaning": "一天；白天",
+    "example": "It was a wonderful day.",
+    "translation": "那是美好的一天。",
+    "id": "day"
+  },
+  {
+    "english": "week",
+    "phonetic": "/wik/",
+    "partOfSpeech": "n.",
+    "meaning": "星期；周",
+    "example": "I exercise three times a week.",
+    "translation": "我每周锻炼三次。",
+    "id": "week"
+  },
+  {
+    "english": "month",
+    "phonetic": "/mʌnθ/",
+    "partOfSpeech": "n.",
+    "meaning": "月",
+    "example": "We moved here last month.",
+    "translation": "我们上个月搬到了这里。",
+    "id": "month"
+  },
+  {
+    "english": "year",
+    "phonetic": "/jɪr/",
+    "partOfSpeech": "n.",
+    "meaning": "年",
+    "example": "This year I want to read more.",
+    "translation": "今年我想多读一些书。",
+    "id": "year"
+  },
+  {
+    "english": "morning",
+    "phonetic": "/ˈmɔrnɪŋ/",
+    "partOfSpeech": "n.",
+    "meaning": "早晨",
+    "example": "The air is cool in the morning.",
+    "translation": "早晨的空气很凉爽。",
+    "id": "morning"
+  },
+  {
+    "english": "afternoon",
+    "phonetic": "/ˌæftərˈnun/",
+    "partOfSpeech": "n.",
+    "meaning": "下午",
+    "example": "Let's meet tomorrow afternoon.",
+    "translation": "我们明天下午见吧。",
+    "id": "afternoon"
+  },
+  {
+    "english": "evening",
+    "phonetic": "/ˈivnɪŋ/",
+    "partOfSpeech": "n.",
+    "meaning": "傍晚；晚上",
+    "example": "We went for a walk in the evening.",
+    "translation": "我们晚上出去散步了。",
+    "id": "evening"
+  },
+  {
+    "english": "night",
+    "phonetic": "/naɪt/",
+    "partOfSpeech": "n.",
+    "meaning": "夜晚",
+    "example": "The stars were bright last night.",
+    "translation": "昨夜星光明亮。",
+    "id": "night"
+  },
+  {
+    "english": "sun",
+    "phonetic": "/sʌn/",
+    "partOfSpeech": "n.",
+    "meaning": "太阳",
+    "example": "The sun rose behind the hills.",
+    "translation": "太阳从山丘后升起。",
+    "id": "sun"
+  },
+  {
+    "english": "moon",
+    "phonetic": "/mun/",
+    "partOfSpeech": "n.",
+    "meaning": "月亮",
+    "example": "The moon looks round tonight.",
+    "translation": "今晚的月亮看起来很圆。",
+    "id": "moon"
+  },
+  {
+    "english": "star",
+    "phonetic": "/stɑr/",
+    "partOfSpeech": "n.",
+    "meaning": "星星",
+    "example": "I saw a bright star in the sky.",
+    "translation": "我看见天空中一颗明亮的星星。",
+    "id": "star"
+  },
+  {
+    "english": "sky",
+    "phonetic": "/skaɪ/",
+    "partOfSpeech": "n.",
+    "meaning": "天空",
+    "example": "The sky turned pink at sunset.",
+    "translation": "日落时天空变成了粉红色。",
+    "id": "sky"
+  },
+  {
+    "english": "cloud",
+    "phonetic": "/klaʊd/",
+    "partOfSpeech": "n.",
+    "meaning": "云",
+    "example": "A cloud covered the sun.",
+    "translation": "一朵云遮住了太阳。",
+    "id": "cloud"
+  },
+  {
+    "english": "rain",
+    "phonetic": "/reɪn/",
+    "partOfSpeech": "n.",
+    "meaning": "雨",
+    "example": "The rain stopped before noon.",
+    "translation": "雨在中午前停了。",
+    "id": "rain"
+  },
+  {
+    "english": "snow",
+    "phonetic": "/snoʊ/",
+    "partOfSpeech": "n.",
+    "meaning": "雪",
+    "example": "The children played in the snow.",
+    "translation": "孩子们在雪地里玩耍。",
+    "id": "snow"
+  },
+  {
+    "english": "wind",
+    "phonetic": "/wɪnd/",
+    "partOfSpeech": "n.",
+    "meaning": "风",
+    "example": "The wind blew the door shut.",
+    "translation": "风把门吹关了。",
+    "id": "wind"
+  },
+  {
+    "english": "weather",
+    "phonetic": "/ˈweðər/",
+    "partOfSpeech": "n.",
+    "meaning": "天气",
+    "example": "The weather is nice today.",
+    "translation": "今天天气很好。",
+    "id": "weather"
+  },
+  {
+    "english": "tree",
+    "phonetic": "/tri/",
+    "partOfSpeech": "n.",
+    "meaning": "树",
+    "example": "A bird is sitting in the tree.",
+    "translation": "一只鸟停在树上。",
+    "id": "tree"
+  },
+  {
+    "english": "flower",
+    "phonetic": "/ˈflaʊər/",
+    "partOfSpeech": "n.",
+    "meaning": "花",
+    "example": "This flower smells lovely.",
+    "translation": "这朵花闻起来很香。",
+    "id": "flower"
+  },
+  {
+    "english": "grass",
+    "phonetic": "/ɡræs/",
+    "partOfSpeech": "n.",
+    "meaning": "草",
+    "example": "The grass is wet after the rain.",
+    "translation": "雨后的草地湿漉漉的。",
+    "id": "grass"
+  },
+  {
+    "english": "river",
+    "phonetic": "/ˈrɪvər/",
+    "partOfSpeech": "n.",
+    "meaning": "河流",
+    "example": "The river flows through the town.",
+    "translation": "这条河流经小镇。",
+    "id": "river"
+  },
+  {
+    "english": "lake",
+    "phonetic": "/leɪk/",
+    "partOfSpeech": "n.",
+    "meaning": "湖",
+    "example": "We walked around the lake.",
+    "translation": "我们绕着湖走了一圈。",
+    "id": "lake"
+  },
+  {
+    "english": "sea",
+    "phonetic": "/si/",
+    "partOfSpeech": "n.",
+    "meaning": "海",
+    "example": "The sea was calm this morning.",
+    "translation": "今天早晨海面很平静。",
+    "id": "sea"
+  },
+  {
+    "english": "mountain",
+    "phonetic": "/ˈmaʊntən/",
+    "partOfSpeech": "n.",
+    "meaning": "山",
+    "example": "The mountain is covered with snow.",
+    "translation": "这座山被白雪覆盖。",
+    "id": "mountain"
+  },
+  {
+    "english": "beach",
+    "phonetic": "/bitʃ/",
+    "partOfSpeech": "n.",
+    "meaning": "海滩",
+    "example": "We collected shells on the beach.",
+    "translation": "我们在海滩上捡贝壳。",
+    "id": "beach"
+  },
+  {
+    "english": "animal",
+    "phonetic": "/ˈænɪməl/",
+    "partOfSpeech": "n.",
+    "meaning": "动物",
+    "example": "What is your favorite animal?",
+    "translation": "你最喜欢什么动物？",
+    "id": "animal"
+  },
+  {
+    "english": "dog",
+    "phonetic": "/dɔɡ/",
+    "partOfSpeech": "n.",
+    "meaning": "狗",
+    "example": "The dog waited by the door.",
+    "translation": "狗在门边等着。",
+    "id": "dog"
+  },
+  {
+    "english": "cat",
+    "phonetic": "/kæt/",
+    "partOfSpeech": "n.",
+    "meaning": "猫",
+    "example": "Our cat likes warm places.",
+    "translation": "我们的猫喜欢暖和的地方。",
+    "id": "cat"
+  },
+  {
+    "english": "bird",
+    "phonetic": "/bɜrd/",
+    "partOfSpeech": "n.",
+    "meaning": "鸟",
+    "example": "A bird flew over the roof.",
+    "translation": "一只鸟飞过了屋顶。",
+    "id": "bird"
+  },
+  {
+    "english": "horse",
+    "phonetic": "/hɔrs/",
+    "partOfSpeech": "n.",
+    "meaning": "马",
+    "example": "The horse ran across the field.",
+    "translation": "那匹马跑过了田野。",
+    "id": "horse"
+  },
+  {
+    "english": "head",
+    "phonetic": "/hed/",
+    "partOfSpeech": "n.",
+    "meaning": "头",
+    "example": "He shook his head slowly.",
+    "translation": "他慢慢地摇了摇头。",
+    "id": "head"
+  },
+  {
+    "english": "face",
+    "phonetic": "/feɪs/",
+    "partOfSpeech": "n.",
+    "meaning": "脸",
+    "example": "Wash your face before breakfast.",
+    "translation": "早饭前洗洗脸。",
+    "id": "face"
+  },
+  {
+    "english": "eye",
+    "phonetic": "/aɪ/",
+    "partOfSpeech": "n.",
+    "meaning": "眼睛",
+    "example": "She has something in her eye.",
+    "translation": "她眼睛里进了东西。",
+    "id": "eye"
+  },
+  {
+    "english": "ear",
+    "phonetic": "/ɪr/",
+    "partOfSpeech": "n.",
+    "meaning": "耳朵",
+    "example": "He whispered in my ear.",
+    "translation": "他在我耳边轻声说话。",
+    "id": "ear"
+  },
+  {
+    "english": "hand",
+    "phonetic": "/hænd/",
+    "partOfSpeech": "n.",
+    "meaning": "手",
+    "example": "Please raise your hand.",
+    "translation": "请举起你的手。",
+    "id": "hand"
+  },
+  {
+    "english": "foot",
+    "phonetic": "/fʊt/",
+    "partOfSpeech": "n.",
+    "meaning": "脚",
+    "example": "My left foot hurts.",
+    "translation": "我的左脚疼。",
+    "id": "foot"
+  },
+  {
+    "english": "heart",
+    "phonetic": "/hɑrt/",
+    "partOfSpeech": "n.",
+    "meaning": "心脏；内心",
+    "example": "Exercise is good for your heart.",
+    "translation": "运动对心脏有益。",
+    "id": "heart"
+  },
+  {
+    "english": "body",
+    "phonetic": "/ˈbɑdi/",
+    "partOfSpeech": "n.",
+    "meaning": "身体",
+    "example": "Your body needs enough sleep.",
+    "translation": "你的身体需要充足的睡眠。",
+    "id": "body"
+  },
+  {
+    "english": "go",
+    "phonetic": "/ɡoʊ/",
+    "partOfSpeech": "v.",
+    "meaning": "去；走",
+    "example": "We go to school by bus.",
+    "translation": "我们坐公共汽车上学。",
+    "id": "go"
+  },
+  {
+    "english": "come",
+    "phonetic": "/kʌm/",
+    "partOfSpeech": "v.",
+    "meaning": "来",
+    "example": "Please come to my party.",
+    "translation": "请来参加我的聚会。",
+    "id": "come"
+  },
+  {
+    "english": "walk",
+    "phonetic": "/wɔk/",
+    "partOfSpeech": "v.",
+    "meaning": "步行；散步",
+    "example": "I walk to work every day.",
+    "translation": "我每天步行上班。",
+    "id": "walk"
+  },
+  {
+    "english": "run",
+    "phonetic": "/rʌn/",
+    "partOfSpeech": "v.",
+    "meaning": "跑",
+    "example": "They run in the park each morning.",
+    "translation": "他们每天早晨在公园跑步。",
+    "id": "run"
+  },
+  {
+    "english": "jump",
+    "phonetic": "/dʒʌmp/",
+    "partOfSpeech": "v.",
+    "meaning": "跳",
+    "example": "The boy can jump very high.",
+    "translation": "那个男孩能跳得很高。",
+    "id": "jump"
+  },
+  {
+    "english": "sit",
+    "phonetic": "/sɪt/",
+    "partOfSpeech": "v.",
+    "meaning": "坐",
+    "example": "You can sit next to me.",
+    "translation": "你可以坐在我旁边。",
+    "id": "sit"
+  },
+  {
+    "english": "stand",
+    "phonetic": "/stænd/",
+    "partOfSpeech": "v.",
+    "meaning": "站立",
+    "example": "Please stand behind the line.",
+    "translation": "请站在线后面。",
+    "id": "stand"
+  },
+  {
+    "english": "sleep",
+    "phonetic": "/slip/",
+    "partOfSpeech": "v.",
+    "meaning": "睡觉",
+    "example": "I usually sleep for eight hours.",
+    "translation": "我通常睡八个小时。",
+    "id": "sleep"
+  },
+  {
+    "english": "wake",
+    "phonetic": "/weɪk/",
+    "partOfSpeech": "v.",
+    "meaning": "醒来；唤醒",
+    "example": "I wake up at six.",
+    "translation": "我六点醒来。",
+    "id": "wake"
+  },
+  {
+    "english": "eat",
+    "phonetic": "/it/",
+    "partOfSpeech": "v.",
+    "meaning": "吃",
+    "example": "We eat dinner at home.",
+    "translation": "我们在家吃晚饭。",
+    "id": "eat"
+  },
+  {
+    "english": "drink",
+    "phonetic": "/drɪŋk/",
+    "partOfSpeech": "v.",
+    "meaning": "喝",
+    "example": "Drink some water after exercise.",
+    "translation": "运动后喝点水。",
+    "id": "drink"
+  },
+  {
+    "english": "cook",
+    "phonetic": "/kʊk/",
+    "partOfSpeech": "v.",
+    "meaning": "做饭；烹饪",
+    "example": "He can cook a simple meal.",
+    "translation": "他会做简单的饭菜。",
+    "id": "cook"
+  },
+  {
+    "english": "wash",
+    "phonetic": "/wɑʃ/",
+    "partOfSpeech": "v.",
+    "meaning": "洗",
+    "example": "Wash your hands before eating.",
+    "translation": "吃饭前洗手。",
+    "id": "wash"
+  },
+  {
+    "english": "clean",
+    "phonetic": "/klin/",
+    "partOfSpeech": "v.",
+    "meaning": "打扫；清洁",
+    "example": "Let's clean the kitchen together.",
+    "translation": "我们一起打扫厨房吧。",
+    "id": "clean"
+  },
+  {
+    "english": "read",
+    "phonetic": "/rid/",
+    "partOfSpeech": "v.",
+    "meaning": "阅读",
+    "example": "I read a few pages every night.",
+    "translation": "我每晚读几页书。",
+    "id": "read"
+  },
+  {
+    "english": "write",
+    "phonetic": "/raɪt/",
+    "partOfSpeech": "v.",
+    "meaning": "写",
+    "example": "Write down the new words.",
+    "translation": "把新单词写下来。",
+    "id": "write"
+  },
+  {
+    "english": "speak",
+    "phonetic": "/spik/",
+    "partOfSpeech": "v.",
+    "meaning": "说；讲话",
+    "example": "Can you speak a little slower?",
+    "translation": "你能说得慢一点吗？",
+    "id": "speak"
+  },
+  {
+    "english": "listen",
+    "phonetic": "/ˈlɪsən/",
+    "partOfSpeech": "v.",
+    "meaning": "听",
+    "example": "Listen carefully to the question.",
+    "translation": "仔细听这个问题。",
+    "id": "listen"
+  },
+  {
+    "english": "hear",
+    "phonetic": "/hɪr/",
+    "partOfSpeech": "v.",
+    "meaning": "听见",
+    "example": "I can hear birds outside.",
+    "translation": "我能听见外面的鸟叫声。",
+    "id": "hear"
+  },
+  {
+    "english": "see",
+    "phonetic": "/si/",
+    "partOfSpeech": "v.",
+    "meaning": "看见",
+    "example": "We can see the sea from here.",
+    "translation": "从这里我们能看见大海。",
+    "id": "see"
+  },
+  {
+    "english": "look",
+    "phonetic": "/lʊk/",
+    "partOfSpeech": "v.",
+    "meaning": "看",
+    "example": "Look at the picture on the wall.",
+    "translation": "看墙上的那幅画。",
+    "id": "look"
+  },
+  {
+    "english": "learn",
+    "phonetic": "/lɜrn/",
+    "partOfSpeech": "v.",
+    "meaning": "学习；学会",
+    "example": "I want to learn how to swim.",
+    "translation": "我想学会游泳。",
+    "id": "learn"
+  },
+  {
+    "english": "study",
+    "phonetic": "/ˈstʌdi/",
+    "partOfSpeech": "v.",
+    "meaning": "学习；研究",
+    "example": "They study English after dinner.",
+    "translation": "他们晚饭后学英语。",
+    "id": "study"
+  },
+  {
+    "english": "teach",
+    "phonetic": "/titʃ/",
+    "partOfSpeech": "v.",
+    "meaning": "教",
+    "example": "Can you teach me this song?",
+    "translation": "你能教我这首歌吗？",
+    "id": "teach"
+  },
+  {
+    "english": "know",
+    "phonetic": "/noʊ/",
+    "partOfSpeech": "v.",
+    "meaning": "知道；认识",
+    "example": "I know the way to the station.",
+    "translation": "我知道去车站的路。",
+    "id": "know"
+  },
+  {
+    "english": "think",
+    "phonetic": "/θɪŋk/",
+    "partOfSpeech": "v.",
+    "meaning": "想；认为",
+    "example": "Think carefully before you answer.",
+    "translation": "回答前仔细想一想。",
+    "id": "think"
+  },
+  {
+    "english": "understand",
+    "phonetic": "/ˌʌndərˈstænd/",
+    "partOfSpeech": "v.",
+    "meaning": "理解；明白",
+    "example": "I understand what you mean.",
+    "translation": "我明白你的意思。",
+    "id": "understand"
+  },
+  {
+    "english": "remember",
+    "phonetic": "/rɪˈmembər/",
+    "partOfSpeech": "v.",
+    "meaning": "记得",
+    "example": "I remember your first visit.",
+    "translation": "我记得你第一次来访。",
+    "id": "remember"
+  },
+  {
+    "english": "forget",
+    "phonetic": "/fərˈɡet/",
+    "partOfSpeech": "v.",
+    "meaning": "忘记",
+    "example": "Don't forget your umbrella.",
+    "translation": "别忘了你的伞。",
+    "id": "forget"
+  },
+  {
+    "english": "ask",
+    "phonetic": "/æsk/",
+    "partOfSpeech": "v.",
+    "meaning": "问；请求",
+    "example": "May I ask a question?",
+    "translation": "我可以问一个问题吗？",
+    "id": "ask"
+  },
+  {
+    "english": "say",
+    "phonetic": "/seɪ/",
+    "partOfSpeech": "v.",
+    "meaning": "说",
+    "example": "What did you say?",
+    "translation": "你说了什么？",
+    "id": "say"
+  },
+  {
+    "english": "tell",
+    "phonetic": "/tel/",
+    "partOfSpeech": "v.",
+    "meaning": "告诉；讲述",
+    "example": "Tell me about your weekend.",
+    "translation": "跟我说说你的周末。",
+    "id": "tell"
+  },
+  {
+    "english": "talk",
+    "phonetic": "/tɔk/",
+    "partOfSpeech": "v.",
+    "meaning": "交谈",
+    "example": "We need to talk about the plan.",
+    "translation": "我们需要谈谈这个计划。",
+    "id": "talk"
+  },
+  {
+    "english": "call",
+    "phonetic": "/kɔl/",
+    "partOfSpeech": "v.",
+    "meaning": "打电话；称呼",
+    "example": "I'll call you after work.",
+    "translation": "我下班后给你打电话。",
+    "id": "call"
+  },
+  {
+    "english": "help",
+    "phonetic": "/help/",
+    "partOfSpeech": "v.",
+    "meaning": "帮助",
+    "example": "Could you help me carry this box?",
+    "translation": "你能帮我搬这个箱子吗？",
+    "id": "help"
+  },
+  {
+    "english": "work",
+    "phonetic": "/wɜrk/",
+    "partOfSpeech": "v.",
+    "meaning": "工作；运转",
+    "example": "She works in a small office.",
+    "translation": "她在一间小办公室工作。",
+    "id": "work"
+  },
+  {
+    "english": "play",
+    "phonetic": "/pleɪ/",
+    "partOfSpeech": "v.",
+    "meaning": "玩；演奏",
+    "example": "The children play outside after school.",
+    "translation": "孩子们放学后在外面玩。",
+    "id": "play"
+  },
+  {
+    "english": "make",
+    "phonetic": "/meɪk/",
+    "partOfSpeech": "v.",
+    "meaning": "制作；使得",
+    "example": "Let's make a paper boat.",
+    "translation": "我们做一只纸船吧。",
+    "id": "make"
+  },
+  {
+    "english": "do",
+    "phonetic": "/du/",
+    "partOfSpeech": "v.",
+    "meaning": "做",
+    "example": "I do my homework after dinner.",
+    "translation": "我晚饭后做作业。",
+    "id": "do"
+  },
+  {
+    "english": "use",
+    "phonetic": "/juz/",
+    "partOfSpeech": "v.",
+    "meaning": "使用",
+    "example": "You can use my computer.",
+    "translation": "你可以用我的电脑。",
+    "id": "use"
+  },
+  {
+    "english": "open",
+    "phonetic": "/ˈoʊpən/",
+    "partOfSpeech": "v.",
+    "meaning": "打开",
+    "example": "Please open the door.",
+    "translation": "请打开门。",
+    "id": "open"
+  },
+  {
+    "english": "close",
+    "phonetic": "/kloʊz/",
+    "partOfSpeech": "v.",
+    "meaning": "关闭",
+    "example": "Close the window before you leave.",
+    "translation": "离开前关上窗户。",
+    "id": "close"
+  },
+  {
+    "english": "start",
+    "phonetic": "/stɑrt/",
+    "partOfSpeech": "v.",
+    "meaning": "开始",
+    "example": "The lesson starts at nine.",
+    "translation": "课程九点开始。",
+    "id": "start"
+  },
+  {
+    "english": "stop",
+    "phonetic": "/stɑp/",
+    "partOfSpeech": "v.",
+    "meaning": "停止",
+    "example": "The bus stopped near the park.",
+    "translation": "公共汽车在公园附近停了下来。",
+    "id": "stop"
+  },
+  {
+    "english": "finish",
+    "phonetic": "/ˈfɪnɪʃ/",
+    "partOfSpeech": "v.",
+    "meaning": "完成；结束",
+    "example": "I want to finish this book today.",
+    "translation": "我想今天读完这本书。",
+    "id": "finish"
+  },
+  {
+    "english": "begin",
+    "phonetic": "/bɪˈɡɪn/",
+    "partOfSpeech": "v.",
+    "meaning": "开始",
+    "example": "We begin with a short exercise.",
+    "translation": "我们先做一个简短的练习。",
+    "id": "begin"
+  },
+  {
+    "english": "keep",
+    "phonetic": "/kip/",
+    "partOfSpeech": "v.",
+    "meaning": "保持；保留",
+    "example": "Keep your room tidy.",
+    "translation": "保持你的房间整洁。",
+    "id": "keep"
+  },
+  {
+    "english": "give",
+    "phonetic": "/ɡɪv/",
+    "partOfSpeech": "v.",
+    "meaning": "给",
+    "example": "Please give me a moment.",
+    "translation": "请给我一点时间。",
+    "id": "give"
+  },
+  {
+    "english": "take",
+    "phonetic": "/teɪk/",
+    "partOfSpeech": "v.",
+    "meaning": "拿；带；乘坐",
+    "example": "Take an umbrella with you.",
+    "translation": "随身带把伞。",
+    "id": "take"
+  },
+  {
+    "english": "bring",
+    "phonetic": "/brɪŋ/",
+    "partOfSpeech": "v.",
+    "meaning": "带来",
+    "example": "Bring your notebook tomorrow.",
+    "translation": "明天带上你的笔记本。",
+    "id": "bring"
+  },
+  {
+    "english": "buy",
+    "phonetic": "/baɪ/",
+    "partOfSpeech": "v.",
+    "meaning": "买",
+    "example": "We need to buy some bread.",
+    "translation": "我们需要买些面包。",
+    "id": "buy"
+  },
+  {
+    "english": "sell",
+    "phonetic": "/sel/",
+    "partOfSpeech": "v.",
+    "meaning": "卖",
+    "example": "They sell fresh fruit here.",
+    "translation": "这里出售新鲜水果。",
+    "id": "sell"
+  },
+  {
+    "english": "pay",
+    "phonetic": "/peɪ/",
+    "partOfSpeech": "v.",
+    "meaning": "支付",
+    "example": "Can I pay by card?",
+    "translation": "我可以刷卡付款吗？",
+    "id": "pay"
+  },
+  {
+    "english": "spend",
+    "phonetic": "/spend/",
+    "partOfSpeech": "v.",
+    "meaning": "花费；度过",
+    "example": "I spend an hour reading every day.",
+    "translation": "我每天花一个小时阅读。",
+    "id": "spend"
+  },
+  {
+    "english": "save",
+    "phonetic": "/seɪv/",
+    "partOfSpeech": "v.",
+    "meaning": "保存；节省；救助",
+    "example": "Save your work before closing the program.",
+    "translation": "关闭程序前保存你的工作。",
+    "id": "save"
+  },
+  {
+    "english": "find",
+    "phonetic": "/faɪnd/",
+    "partOfSpeech": "v.",
+    "meaning": "找到；发现",
+    "example": "I can't find my glasses.",
+    "translation": "我找不到我的眼镜。",
+    "id": "find"
+  },
+  {
+    "english": "lose",
+    "phonetic": "/luz/",
+    "partOfSpeech": "v.",
+    "meaning": "丢失；输掉",
+    "example": "Don't lose your ticket.",
+    "translation": "别弄丢你的票。",
+    "id": "lose"
+  },
+  {
+    "english": "leave",
+    "phonetic": "/liv/",
+    "partOfSpeech": "v.",
+    "meaning": "离开；留下",
+    "example": "We leave home at seven.",
+    "translation": "我们七点离开家。",
+    "id": "leave"
+  },
+  {
+    "english": "arrive",
+    "phonetic": "/əˈraɪv/",
+    "partOfSpeech": "v.",
+    "meaning": "到达",
+    "example": "The train will arrive soon.",
+    "translation": "火车很快就要到了。",
+    "id": "arrive"
+  },
+  {
+    "english": "return",
+    "phonetic": "/rɪˈtɜrn/",
+    "partOfSpeech": "v.",
+    "meaning": "返回；归还",
+    "example": "Please return the book next week.",
+    "translation": "请下周归还这本书。",
+    "id": "return"
+  },
+  {
+    "english": "wait",
+    "phonetic": "/weɪt/",
+    "partOfSpeech": "v.",
+    "meaning": "等待",
+    "example": "Wait here for a minute.",
+    "translation": "在这里等一分钟。",
+    "id": "wait"
+  },
+  {
+    "english": "meet",
+    "phonetic": "/mit/",
+    "partOfSpeech": "v.",
+    "meaning": "遇见；会面",
+    "example": "Let's meet at the library.",
+    "translation": "我们在图书馆见吧。",
+    "id": "meet"
+  },
+  {
+    "english": "visit",
+    "phonetic": "/ˈvɪzɪt/",
+    "partOfSpeech": "v.",
+    "meaning": "参观；拜访",
+    "example": "We visit our grandparents on Sundays.",
+    "translation": "我们每逢星期天看望祖父母。",
+    "id": "visit"
+  },
+  {
+    "english": "travel",
+    "phonetic": "/ˈtrævəl/",
+    "partOfSpeech": "v.",
+    "meaning": "旅行",
+    "example": "She likes to travel by train.",
+    "translation": "她喜欢乘火车旅行。",
+    "id": "travel"
+  },
+  {
+    "english": "move",
+    "phonetic": "/muv/",
+    "partOfSpeech": "v.",
+    "meaning": "移动；搬家",
+    "example": "Please move the chair closer.",
+    "translation": "请把椅子移近一点。",
+    "id": "move"
+  },
+  {
+    "english": "live",
+    "phonetic": "/lɪv/",
+    "partOfSpeech": "v.",
+    "meaning": "居住；生活",
+    "example": "They live near the river.",
+    "translation": "他们住在河边。",
+    "id": "live"
+  },
+  {
+    "english": "stay",
+    "phonetic": "/steɪ/",
+    "partOfSpeech": "v.",
+    "meaning": "停留；保持",
+    "example": "We will stay here for two days.",
+    "translation": "我们将在这里待两天。",
+    "id": "stay"
+  },
+  {
+    "english": "need",
+    "phonetic": "/nid/",
+    "partOfSpeech": "v.",
+    "meaning": "需要",
+    "example": "You need some rest.",
+    "translation": "你需要休息一下。",
+    "id": "need"
+  },
+  {
+    "english": "want",
+    "phonetic": "/wɑnt/",
+    "partOfSpeech": "v.",
+    "meaning": "想要",
+    "example": "I want a glass of water.",
+    "translation": "我想要一杯水。",
+    "id": "want"
+  },
+  {
+    "english": "like",
+    "phonetic": "/laɪk/",
+    "partOfSpeech": "v.",
+    "meaning": "喜欢",
+    "example": "I like walking in the rain.",
+    "translation": "我喜欢在雨中散步。",
+    "id": "like"
+  },
+  {
+    "english": "love",
+    "phonetic": "/lʌv/",
+    "partOfSpeech": "v.",
+    "meaning": "爱；热爱",
+    "example": "They love spending time together.",
+    "translation": "他们喜欢一起度过时光。",
+    "id": "love"
+  },
+  {
+    "english": "hope",
+    "phonetic": "/hoʊp/",
+    "partOfSpeech": "v.",
+    "meaning": "希望",
+    "example": "I hope you feel better soon.",
+    "translation": "我希望你早日好起来。",
+    "id": "hope"
+  },
+  {
+    "english": "enjoy",
+    "phonetic": "/ɪnˈdʒɔɪ/",
+    "partOfSpeech": "v.",
+    "meaning": "享受；喜欢",
+    "example": "We enjoy cooking together.",
+    "translation": "我们喜欢一起做饭。",
+    "id": "enjoy"
+  },
+  {
+    "english": "feel",
+    "phonetic": "/fil/",
+    "partOfSpeech": "v.",
+    "meaning": "感觉",
+    "example": "I feel much better today.",
+    "translation": "我今天感觉好多了。",
+    "id": "feel"
+  },
+  {
+    "english": "try",
+    "phonetic": "/traɪ/",
+    "partOfSpeech": "v.",
+    "meaning": "尝试；努力",
+    "example": "Try reading the sentence again.",
+    "translation": "试着再读一遍这个句子。",
+    "id": "try"
+  },
+  {
+    "english": "choose",
+    "phonetic": "/tʃuz/",
+    "partOfSpeech": "v.",
+    "meaning": "选择",
+    "example": "Choose a book you like.",
+    "translation": "选一本你喜欢的书。",
+    "id": "choose"
+  },
+  {
+    "english": "decide",
+    "phonetic": "/dɪˈsaɪd/",
+    "partOfSpeech": "v.",
+    "meaning": "决定",
+    "example": "We need to decide where to go.",
+    "translation": "我们需要决定去哪里。",
+    "id": "decide"
+  },
+  {
+    "english": "plan",
+    "phonetic": "/plæn/",
+    "partOfSpeech": "v.",
+    "meaning": "计划",
+    "example": "We plan to leave early.",
+    "translation": "我们计划早点出发。",
+    "id": "plan"
+  },
+  {
+    "english": "change",
+    "phonetic": "/tʃeɪndʒ/",
+    "partOfSpeech": "v.",
+    "meaning": "改变；更换",
+    "example": "You can change your mind.",
+    "translation": "你可以改变主意。",
+    "id": "change"
+  },
+  {
+    "english": "grow",
+    "phonetic": "/ɡroʊ/",
+    "partOfSpeech": "v.",
+    "meaning": "生长；种植",
+    "example": "These plants grow quickly.",
+    "translation": "这些植物长得很快。",
+    "id": "grow"
+  },
+  {
+    "english": "build",
+    "phonetic": "/bɪld/",
+    "partOfSpeech": "v.",
+    "meaning": "建造",
+    "example": "They will build a new bridge.",
+    "translation": "他们将建造一座新桥。",
+    "id": "build"
+  },
+  {
+    "english": "break",
+    "phonetic": "/breɪk/",
+    "partOfSpeech": "v.",
+    "meaning": "打破；损坏",
+    "example": "Be careful not to break the glass.",
+    "translation": "小心别打碎玻璃杯。",
+    "id": "break"
+  },
+  {
+    "english": "cut",
+    "phonetic": "/kʌt/",
+    "partOfSpeech": "v.",
+    "meaning": "切；剪",
+    "example": "Cut the paper into two pieces.",
+    "translation": "把纸剪成两片。",
+    "id": "cut"
+  },
+  {
+    "english": "draw",
+    "phonetic": "/drɔ/",
+    "partOfSpeech": "v.",
+    "meaning": "画",
+    "example": "She can draw animals well.",
+    "translation": "她很擅长画动物。",
+    "id": "draw"
+  },
+  {
+    "english": "paint",
+    "phonetic": "/peɪnt/",
+    "partOfSpeech": "v.",
+    "meaning": "绘画；涂漆",
+    "example": "We painted the wall blue.",
+    "translation": "我们把墙刷成了蓝色。",
+    "id": "paint"
+  },
+  {
+    "english": "sing",
+    "phonetic": "/sɪŋ/",
+    "partOfSpeech": "v.",
+    "meaning": "唱歌",
+    "example": "He likes to sing in the shower.",
+    "translation": "他喜欢洗澡时唱歌。",
+    "id": "sing"
+  },
+  {
+    "english": "dance",
+    "phonetic": "/dæns/",
+    "partOfSpeech": "v.",
+    "meaning": "跳舞",
+    "example": "They danced together at the party.",
+    "translation": "他们在聚会上一起跳舞。",
+    "id": "dance"
+  },
+  {
+    "english": "swim",
+    "phonetic": "/swɪm/",
+    "partOfSpeech": "v.",
+    "meaning": "游泳",
+    "example": "We swim in the pool on Saturdays.",
+    "translation": "我们每逢星期六在泳池游泳。",
+    "id": "swim"
+  },
+  {
+    "english": "drive",
+    "phonetic": "/draɪv/",
+    "partOfSpeech": "v.",
+    "meaning": "驾驶",
+    "example": "She drives to work every morning.",
+    "translation": "她每天早晨开车上班。",
+    "id": "drive"
+  },
+  {
+    "english": "ride",
+    "phonetic": "/raɪd/",
+    "partOfSpeech": "v.",
+    "meaning": "骑；乘坐",
+    "example": "Can you ride a bicycle?",
+    "translation": "你会骑自行车吗？",
+    "id": "ride"
+  },
+  {
+    "english": "carry",
+    "phonetic": "/ˈkæri/",
+    "partOfSpeech": "v.",
+    "meaning": "搬；携带",
+    "example": "He carried the bags upstairs.",
+    "translation": "他把袋子提上了楼。",
+    "id": "carry"
+  },
+  {
+    "english": "hold",
+    "phonetic": "/hoʊld/",
+    "partOfSpeech": "v.",
+    "meaning": "握住；拿着",
+    "example": "Please hold my hand.",
+    "translation": "请握住我的手。",
+    "id": "hold"
+  },
+  {
+    "english": "put",
+    "phonetic": "/pʊt/",
+    "partOfSpeech": "v.",
+    "meaning": "放",
+    "example": "Put your shoes by the door.",
+    "translation": "把鞋放在门边。",
+    "id": "put"
+  },
+  {
+    "english": "turn",
+    "phonetic": "/tɜrn/",
+    "partOfSpeech": "v.",
+    "meaning": "转动；转向",
+    "example": "Turn left at the next street.",
+    "translation": "在下一条街向左转。",
+    "id": "turn"
+  },
+  {
+    "english": "send",
+    "phonetic": "/send/",
+    "partOfSpeech": "v.",
+    "meaning": "发送；寄",
+    "example": "I will send you the address.",
+    "translation": "我会把地址发给你。",
+    "id": "send"
+  },
+  {
+    "english": "receive",
+    "phonetic": "/rɪˈsiv/",
+    "partOfSpeech": "v.",
+    "meaning": "收到",
+    "example": "Did you receive my letter?",
+    "translation": "你收到我的信了吗？",
+    "id": "receive"
+  },
+  {
+    "english": "show",
+    "phonetic": "/ʃoʊ/",
+    "partOfSpeech": "v.",
+    "meaning": "展示；给……看",
+    "example": "Show me your new drawing.",
+    "translation": "给我看看你的新画作。",
+    "id": "show"
+  },
+  {
+    "english": "follow",
+    "phonetic": "/ˈfɑloʊ/",
+    "partOfSpeech": "v.",
+    "meaning": "跟随；遵循",
+    "example": "Follow the signs to the exit.",
+    "translation": "按照标志走向出口。",
+    "id": "follow"
+  },
+  {
+    "english": "believe",
+    "phonetic": "/bɪˈliv/",
+    "partOfSpeech": "v.",
+    "meaning": "相信",
+    "example": "I believe you can do it.",
+    "translation": "我相信你能做到。",
+    "id": "believe"
+  },
+  {
+    "english": "agree",
+    "phonetic": "/əˈɡri/",
+    "partOfSpeech": "v.",
+    "meaning": "同意",
+    "example": "I agree with your idea.",
+    "translation": "我同意你的想法。",
+    "id": "agree"
+  },
+  {
+    "english": "good",
+    "phonetic": "/ɡʊd/",
+    "partOfSpeech": "adj.",
+    "meaning": "好的",
+    "example": "This is a good place to rest.",
+    "translation": "这是一个休息的好地方。",
+    "id": "good"
+  },
+  {
+    "english": "bad",
+    "phonetic": "/bæd/",
+    "partOfSpeech": "adj.",
+    "meaning": "坏的；糟糕的",
+    "example": "We stayed home because of bad weather.",
+    "translation": "因为天气不好，我们待在家里。",
+    "id": "bad"
+  },
+  {
+    "english": "big",
+    "phonetic": "/bɪɡ/",
+    "partOfSpeech": "adj.",
+    "meaning": "大的",
+    "example": "They live in a big house.",
+    "translation": "他们住在一所大房子里。",
+    "id": "big"
+  },
+  {
+    "english": "small",
+    "phonetic": "/smɔl/",
+    "partOfSpeech": "adj.",
+    "meaning": "小的",
+    "example": "I have a small garden.",
+    "translation": "我有一个小花园。",
+    "id": "small"
+  },
+  {
+    "english": "long",
+    "phonetic": "/lɔŋ/",
+    "partOfSpeech": "adj.",
+    "meaning": "长的",
+    "example": "It was a long journey.",
+    "translation": "那是一段漫长的旅程。",
+    "id": "long"
+  },
+  {
+    "english": "short",
+    "phonetic": "/ʃɔrt/",
+    "partOfSpeech": "adj.",
+    "meaning": "短的；矮的",
+    "example": "Let's take a short break.",
+    "translation": "我们短暂休息一下吧。",
+    "id": "short"
+  },
+  {
+    "english": "high",
+    "phonetic": "/haɪ/",
+    "partOfSpeech": "adj.",
+    "meaning": "高的",
+    "example": "The wall is too high to climb.",
+    "translation": "这堵墙太高了，爬不上去。",
+    "id": "high"
+  },
+  {
+    "english": "low",
+    "phonetic": "/loʊ/",
+    "partOfSpeech": "adj.",
+    "meaning": "低的",
+    "example": "The shelf is low enough for children.",
+    "translation": "这个架子很低，孩子们够得着。",
+    "id": "low"
+  },
+  {
+    "english": "new",
+    "phonetic": "/nu/",
+    "partOfSpeech": "adj.",
+    "meaning": "新的",
+    "example": "I learned something new today.",
+    "translation": "我今天学到了新东西。",
+    "id": "new"
+  },
+  {
+    "english": "old",
+    "phonetic": "/oʊld/",
+    "partOfSpeech": "adj.",
+    "meaning": "旧的；年老的",
+    "example": "This old photo is special to me.",
+    "translation": "这张老照片对我意义特别。",
+    "id": "old"
+  },
+  {
+    "english": "young",
+    "phonetic": "/jʌŋ/",
+    "partOfSpeech": "adj.",
+    "meaning": "年轻的",
+    "example": "The young tree needs more water.",
+    "translation": "这棵小树需要更多的水。",
+    "id": "young"
+  },
+  {
+    "english": "hot",
+    "phonetic": "/hɑt/",
+    "partOfSpeech": "adj.",
+    "meaning": "热的；烫的",
+    "example": "Be careful with the hot soup.",
+    "translation": "小心这碗热汤。",
+    "id": "hot"
+  },
+  {
+    "english": "cold",
+    "phonetic": "/koʊld/",
+    "partOfSpeech": "adj.",
+    "meaning": "冷的",
+    "example": "The water is cold.",
+    "translation": "水是冷的。",
+    "id": "cold"
+  },
+  {
+    "english": "warm",
+    "phonetic": "/wɔrm/",
+    "partOfSpeech": "adj.",
+    "meaning": "温暖的",
+    "example": "Wear a warm coat today.",
+    "translation": "今天穿件暖和的外套。",
+    "id": "warm"
+  },
+  {
+    "english": "cool",
+    "phonetic": "/kul/",
+    "partOfSpeech": "adj.",
+    "meaning": "凉爽的",
+    "example": "The evening air is cool.",
+    "translation": "晚间的空气很凉爽。",
+    "id": "cool"
+  },
+  {
+    "english": "happy",
+    "phonetic": "/ˈhæpi/",
+    "partOfSpeech": "adj.",
+    "meaning": "快乐的",
+    "example": "I'm happy to see you.",
+    "translation": "见到你我很高兴。",
+    "id": "happy"
+  },
+  {
+    "english": "sad",
+    "phonetic": "/sæd/",
+    "partOfSpeech": "adj.",
+    "meaning": "悲伤的",
+    "example": "The story has a sad ending.",
+    "translation": "这个故事的结局很悲伤。",
+    "id": "sad"
+  },
+  {
+    "english": "angry",
+    "phonetic": "/ˈæŋɡri/",
+    "partOfSpeech": "adj.",
+    "meaning": "生气的",
+    "example": "He was angry about the delay.",
+    "translation": "他对延误感到生气。",
+    "id": "angry"
+  },
+  {
+    "english": "tired",
+    "phonetic": "/ˈtaɪərd/",
+    "partOfSpeech": "adj.",
+    "meaning": "疲倦的",
+    "example": "I feel tired after the long walk.",
+    "translation": "走了很远的路后我感到疲倦。",
+    "id": "tired"
+  },
+  {
+    "english": "hungry",
+    "phonetic": "/ˈhʌŋɡri/",
+    "partOfSpeech": "adj.",
+    "meaning": "饥饿的",
+    "example": "Are you hungry yet?",
+    "translation": "你饿了吗？",
+    "id": "hungry"
+  },
+  {
+    "english": "thirsty",
+    "phonetic": "/ˈθɜrsti/",
+    "partOfSpeech": "adj.",
+    "meaning": "口渴的",
+    "example": "I'm thirsty after running.",
+    "translation": "跑步后我口渴了。",
+    "id": "thirsty"
+  },
+  {
+    "english": "busy",
+    "phonetic": "/ˈbɪzi/",
+    "partOfSpeech": "adj.",
+    "meaning": "忙碌的",
+    "example": "The shop is busy on weekends.",
+    "translation": "这家商店周末很忙。",
+    "id": "busy"
+  },
+  {
+    "english": "free",
+    "phonetic": "/fri/",
+    "partOfSpeech": "adj.",
+    "meaning": "空闲的；免费的",
+    "example": "Are you free this afternoon?",
+    "translation": "你今天下午有空吗？",
+    "id": "free"
+  },
+  {
+    "english": "easy",
+    "phonetic": "/ˈizi/",
+    "partOfSpeech": "adj.",
+    "meaning": "容易的",
+    "example": "This question is easy.",
+    "translation": "这个问题很简单。",
+    "id": "easy"
+  },
+  {
+    "english": "difficult",
+    "phonetic": "/ˈdɪfɪkəlt/",
+    "partOfSpeech": "adj.",
+    "meaning": "困难的",
+    "example": "The first step is often difficult.",
+    "translation": "第一步往往很难。",
+    "id": "difficult"
+  },
+  {
+    "english": "important",
+    "phonetic": "/ɪmˈpɔrtənt/",
+    "partOfSpeech": "adj.",
+    "meaning": "重要的",
+    "example": "Sleep is important for your health.",
+    "translation": "睡眠对健康很重要。",
+    "id": "important"
+  },
+  {
+    "english": "different",
+    "phonetic": "/ˈdɪfərənt/",
+    "partOfSpeech": "adj.",
+    "meaning": "不同的",
+    "example": "We have different ideas.",
+    "translation": "我们有不同的想法。",
+    "id": "different"
+  },
+  {
+    "english": "same",
+    "phonetic": "/seɪm/",
+    "partOfSpeech": "adj.",
+    "meaning": "相同的",
+    "example": "We take the same bus.",
+    "translation": "我们乘坐同一班公共汽车。",
+    "id": "same"
+  },
+  {
+    "english": "right",
+    "phonetic": "/raɪt/",
+    "partOfSpeech": "adj.",
+    "meaning": "正确的；右边的",
+    "example": "You chose the right answer.",
+    "translation": "你选对了答案。",
+    "id": "right"
+  },
+  {
+    "english": "wrong",
+    "phonetic": "/rɔŋ/",
+    "partOfSpeech": "adj.",
+    "meaning": "错误的",
+    "example": "I got on the wrong bus.",
+    "translation": "我上错了公共汽车。",
+    "id": "wrong"
+  },
+  {
+    "english": "true",
+    "phonetic": "/tru/",
+    "partOfSpeech": "adj.",
+    "meaning": "真实的；正确的",
+    "example": "Is this story true?",
+    "translation": "这个故事是真的吗？",
+    "id": "true"
+  },
+  {
+    "english": "beautiful",
+    "phonetic": "/ˈbjutɪfəl/",
+    "partOfSpeech": "adj.",
+    "meaning": "美丽的",
+    "example": "The garden is beautiful in spring.",
+    "translation": "这座花园春天很美。",
+    "id": "beautiful"
+  },
+  {
+    "english": "nice",
+    "phonetic": "/naɪs/",
+    "partOfSpeech": "adj.",
+    "meaning": "令人愉快的；友好的",
+    "example": "Have a nice weekend.",
+    "translation": "祝你周末愉快。",
+    "id": "nice"
+  },
+  {
+    "english": "kind",
+    "phonetic": "/kaɪnd/",
+    "partOfSpeech": "adj.",
+    "meaning": "善良的；友善的",
+    "example": "She is kind to everyone.",
+    "translation": "她对每个人都很友善。",
+    "id": "kind"
+  },
+  {
+    "english": "friendly",
+    "phonetic": "/ˈfrendli/",
+    "partOfSpeech": "adj.",
+    "meaning": "友好的",
+    "example": "Our neighbors are friendly.",
+    "translation": "我们的邻居很友好。",
+    "id": "friendly"
+  },
+  {
+    "english": "quiet",
+    "phonetic": "/ˈkwaɪət/",
+    "partOfSpeech": "adj.",
+    "meaning": "安静的",
+    "example": "Please be quiet in the library.",
+    "translation": "请在图书馆保持安静。",
+    "id": "quiet"
+  },
+  {
+    "english": "loud",
+    "phonetic": "/laʊd/",
+    "partOfSpeech": "adj.",
+    "meaning": "响亮的；吵闹的",
+    "example": "The music is too loud.",
+    "translation": "音乐声音太大了。",
+    "id": "loud"
+  },
+  {
+    "english": "fast",
+    "phonetic": "/fæst/",
+    "partOfSpeech": "adj.",
+    "meaning": "快的",
+    "example": "This is a fast train.",
+    "translation": "这是一列速度很快的火车。",
+    "id": "fast"
+  },
+  {
+    "english": "slow",
+    "phonetic": "/sloʊ/",
+    "partOfSpeech": "adj.",
+    "meaning": "慢的",
+    "example": "We took a slow walk home.",
+    "translation": "我们慢慢地走回了家。",
+    "id": "slow"
+  },
+  {
+    "english": "early",
+    "phonetic": "/ˈɜrli/",
+    "partOfSpeech": "adj.",
+    "meaning": "早的；提前的",
+    "example": "We took an early train.",
+    "translation": "我们乘坐了一班早班火车。",
+    "id": "early"
+  },
+  {
+    "english": "late",
+    "phonetic": "/leɪt/",
+    "partOfSpeech": "adj.",
+    "meaning": "晚的；迟到的",
+    "example": "I'm sorry I'm late.",
+    "translation": "抱歉，我迟到了。",
+    "id": "late"
+  },
+  {
+    "english": "strong",
+    "phonetic": "/strɔŋ/",
+    "partOfSpeech": "adj.",
+    "meaning": "强壮的；强劲的",
+    "example": "A strong wind shook the trees.",
+    "translation": "一阵强风吹得树木摇晃。",
+    "id": "strong"
+  },
+  {
+    "english": "weak",
+    "phonetic": "/wik/",
+    "partOfSpeech": "adj.",
+    "meaning": "虚弱的；薄弱的",
+    "example": "He felt weak after being ill.",
+    "translation": "生病后他感到虚弱。",
+    "id": "weak"
+  },
+  {
+    "english": "healthy",
+    "phonetic": "/ˈhelθi/",
+    "partOfSpeech": "adj.",
+    "meaning": "健康的",
+    "example": "Walking is a healthy habit.",
+    "translation": "散步是一种健康的习惯。",
+    "id": "healthy"
+  },
+  {
+    "english": "sick",
+    "phonetic": "/sɪk/",
+    "partOfSpeech": "adj.",
+    "meaning": "生病的；不舒服的",
+    "example": "She stayed home because she was sick.",
+    "translation": "她因为生病待在家里。",
+    "id": "sick"
+  },
+  {
+    "english": "safe",
+    "phonetic": "/seɪf/",
+    "partOfSpeech": "adj.",
+    "meaning": "安全的",
+    "example": "Keep your passport in a safe place.",
+    "translation": "把护照放在安全的地方。",
+    "id": "safe"
+  },
+  {
+    "english": "dangerous",
+    "phonetic": "/ˈdeɪndʒərəs/",
+    "partOfSpeech": "adj.",
+    "meaning": "危险的",
+    "example": "Swimming here is dangerous.",
+    "translation": "在这里游泳很危险。",
+    "id": "dangerous"
+  },
+  {
+    "english": "full",
+    "phonetic": "/fʊl/",
+    "partOfSpeech": "adj.",
+    "meaning": "满的；饱的",
+    "example": "The bus is full.",
+    "translation": "公共汽车满员了。",
+    "id": "full"
+  },
+  {
+    "english": "empty",
+    "phonetic": "/ˈempti/",
+    "partOfSpeech": "adj.",
+    "meaning": "空的",
+    "example": "The bottle is empty.",
+    "translation": "瓶子是空的。",
+    "id": "empty"
+  },
+  {
+    "english": "rich",
+    "phonetic": "/rɪtʃ/",
+    "partOfSpeech": "adj.",
+    "meaning": "富有的；丰富的",
+    "example": "The region has a rich history.",
+    "translation": "这个地区有丰富的历史。",
+    "id": "rich"
+  },
+  {
+    "english": "poor",
+    "phonetic": "/pʊr/",
+    "partOfSpeech": "adj.",
+    "meaning": "贫穷的；差的",
+    "example": "The picture quality is poor.",
+    "translation": "图片质量很差。",
+    "id": "poor"
+  },
+  {
+    "english": "cheap",
+    "phonetic": "/tʃip/",
+    "partOfSpeech": "adj.",
+    "meaning": "便宜的",
+    "example": "These tickets are cheap.",
+    "translation": "这些票很便宜。",
+    "id": "cheap"
+  },
+  {
+    "english": "expensive",
+    "phonetic": "/ɪkˈspensɪv/",
+    "partOfSpeech": "adj.",
+    "meaning": "昂贵的",
+    "example": "This hotel is too expensive.",
+    "translation": "这家酒店太贵了。",
+    "id": "expensive"
+  },
+  {
+    "english": "fresh",
+    "phonetic": "/freʃ/",
+    "partOfSpeech": "adj.",
+    "meaning": "新鲜的",
+    "example": "We bought fresh bread this morning.",
+    "translation": "我们今早买了新鲜面包。",
+    "id": "fresh"
+  },
+  {
+    "english": "sweet",
+    "phonetic": "/swit/",
+    "partOfSpeech": "adj.",
+    "meaning": "甜的",
+    "example": "These grapes are very sweet.",
+    "translation": "这些葡萄很甜。",
+    "id": "sweet"
+  },
+  {
+    "english": "soft",
+    "phonetic": "/sɔft/",
+    "partOfSpeech": "adj.",
+    "meaning": "柔软的；轻柔的",
+    "example": "This blanket is soft.",
+    "translation": "这条毯子很柔软。",
+    "id": "soft"
+  },
+  {
+    "english": "hard",
+    "phonetic": "/hɑrd/",
+    "partOfSpeech": "adj.",
+    "meaning": "坚硬的；困难的",
+    "example": "The ground is hard and dry.",
+    "translation": "地面又硬又干。",
+    "id": "hard"
+  },
+  {
+    "english": "dark",
+    "phonetic": "/dɑrk/",
+    "partOfSpeech": "adj.",
+    "meaning": "黑暗的；深色的",
+    "example": "The room was dark and quiet.",
+    "translation": "房间里又暗又安静。",
+    "id": "dark"
+  },
+  {
+    "english": "bright",
+    "phonetic": "/braɪt/",
+    "partOfSpeech": "adj.",
+    "meaning": "明亮的；鲜艳的",
+    "example": "The room is bright in the morning.",
+    "translation": "这个房间早晨很明亮。",
+    "id": "bright"
+  },
+  {
+    "english": "clear",
+    "phonetic": "/klɪr/",
+    "partOfSpeech": "adj.",
+    "meaning": "清楚的；清澈的",
+    "example": "Her instructions were clear.",
+    "translation": "她的指示很清楚。",
+    "id": "clear"
+  },
+  {
+    "english": "ready",
+    "phonetic": "/ˈredi/",
+    "partOfSpeech": "adj.",
+    "meaning": "准备好的",
+    "example": "Are you ready to leave?",
+    "translation": "你准备好出发了吗？",
+    "id": "ready"
+  },
+  {
+    "english": "sure",
+    "phonetic": "/ʃʊr/",
+    "partOfSpeech": "adj.",
+    "meaning": "确信的",
+    "example": "Are you sure about the date?",
+    "translation": "你确定日期吗？",
+    "id": "sure"
+  },
+  {
+    "english": "possible",
+    "phonetic": "/ˈpɑsəbəl/",
+    "partOfSpeech": "adj.",
+    "meaning": "可能的",
+    "example": "Is it possible to walk there?",
+    "translation": "可以步行去那里吗？",
+    "id": "possible"
+  },
+  {
+    "english": "useful",
+    "phonetic": "/ˈjusfəl/",
+    "partOfSpeech": "adj.",
+    "meaning": "有用的",
+    "example": "This map is very useful.",
+    "translation": "这张地图很有用。",
+    "id": "useful"
+  },
+  {
+    "english": "careful",
+    "phonetic": "/ˈkerfəl/",
+    "partOfSpeech": "adj.",
+    "meaning": "小心的；仔细的",
+    "example": "Be careful when crossing the road.",
+    "translation": "过马路时要小心。",
+    "id": "careful"
+  },
+  {
+    "english": "simple",
+    "phonetic": "/ˈsɪmpəl/",
+    "partOfSpeech": "adj.",
+    "meaning": "简单的",
+    "example": "We made a simple plan.",
+    "translation": "我们制订了一个简单的计划。",
+    "id": "simple"
+  },
+  {
+    "english": "special",
+    "phonetic": "/ˈspeʃəl/",
+    "partOfSpeech": "adj.",
+    "meaning": "特别的",
+    "example": "Today is a special day for us.",
+    "translation": "今天对我们来说是个特别的日子。",
+    "id": "special"
+  },
+  {
+    "english": "interesting",
+    "phonetic": "/ˈɪntrəstɪŋ/",
+    "partOfSpeech": "adj.",
+    "meaning": "有趣的",
+    "example": "That sounds like an interesting book.",
+    "translation": "那听起来是一本有趣的书。",
+    "id": "interesting"
+  },
+  {
+    "english": "always",
+    "phonetic": "/ˈɔlweɪz/",
+    "partOfSpeech": "adv.",
+    "meaning": "总是",
+    "example": "She always arrives on time.",
+    "translation": "她总是准时到达。",
+    "id": "always"
+  },
+  {
+    "english": "often",
+    "phonetic": "/ˈɔfən/",
+    "partOfSpeech": "adv.",
+    "meaning": "经常",
+    "example": "We often walk after dinner.",
+    "translation": "我们经常在晚饭后散步。",
+    "id": "often"
+  },
+  {
+    "english": "sometimes",
+    "phonetic": "/ˈsʌmtaɪmz/",
+    "partOfSpeech": "adv.",
+    "meaning": "有时",
+    "example": "I sometimes work from home.",
+    "translation": "我有时在家办公。",
+    "id": "sometimes"
+  },
+  {
+    "english": "never",
+    "phonetic": "/ˈnevər/",
+    "partOfSpeech": "adv.",
+    "meaning": "从不",
+    "example": "He never drinks coffee at night.",
+    "translation": "他晚上从不喝咖啡。",
+    "id": "never"
+  },
+  {
+    "english": "usually",
+    "phonetic": "/ˈjuʒuəli/",
+    "partOfSpeech": "adv.",
+    "meaning": "通常",
+    "example": "I usually get up at seven.",
+    "translation": "我通常七点起床。",
+    "id": "usually"
+  },
+  {
+    "english": "already",
+    "phonetic": "/ɔlˈredi/",
+    "partOfSpeech": "adv.",
+    "meaning": "已经",
+    "example": "I have already finished my homework.",
+    "translation": "我已经做完作业了。",
+    "id": "already"
+  },
+  {
+    "english": "still",
+    "phonetic": "/stɪl/",
+    "partOfSpeech": "adv.",
+    "meaning": "仍然",
+    "example": "It is still raining outside.",
+    "translation": "外面仍在下雨。",
+    "id": "still"
+  },
+  {
+    "english": "together",
+    "phonetic": "/təˈɡeðər/",
+    "partOfSpeech": "adv.",
+    "meaning": "一起",
+    "example": "We can solve this problem together.",
+    "translation": "我们可以一起解决这个问题。",
+    "id": "together"
+  },
+  {
+    "english": "here",
+    "phonetic": "/hɪr/",
+    "partOfSpeech": "adv.",
+    "meaning": "这里",
+    "example": "Please wait here.",
+    "translation": "请在这里等。",
+    "id": "here"
+  },
+  {
+    "english": "there",
+    "phonetic": "/ðer/",
+    "partOfSpeech": "adv.",
+    "meaning": "那里",
+    "example": "Put the bag over there.",
+    "translation": "把包放在那边。",
+    "id": "there"
+  },
+  {
+    "english": "today",
+    "phonetic": "/təˈdeɪ/",
+    "partOfSpeech": "adv.",
+    "meaning": "今天",
+    "example": "I learned five words today.",
+    "translation": "我今天学了五个单词。",
+    "id": "today"
+  },
+  {
+    "english": "tomorrow",
+    "phonetic": "/təˈmɑroʊ/",
+    "partOfSpeech": "adv.",
+    "meaning": "明天",
+    "example": "We will meet again tomorrow.",
+    "translation": "我们明天还会见面。",
+    "id": "tomorrow"
+  },
+  {
+    "english": "yesterday",
+    "phonetic": "/ˈjestərdeɪ/",
+    "partOfSpeech": "adv.",
+    "meaning": "昨天",
+    "example": "I saw her yesterday.",
+    "translation": "我昨天见到了她。",
+    "id": "yesterday"
+  }
+]
